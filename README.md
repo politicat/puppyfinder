@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/politicat/puppyfinder.png?label=ready&title=Ready)](https://waffle.io/politicat/puppyfinder)
 # PuppyFinder
 
 ## Synopsis
