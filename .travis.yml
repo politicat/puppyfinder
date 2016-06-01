@@ -1,0 +1,27 @@
+# Basic settings
+language: node_js
+node_js:
+  - "6"
+  - "6.2"
+  - "6.1"
+  - "5"
+  - "4"
+  - "4.4"
+  - "4.3"
+  - "4.2"
+  - "4.1"
+  - "0.12"
+  - "0.11"
+  - "0.10"
+  - "iojs"
+
+#
+
+# Test script options
+before_script:
+  - npm install -g gulp
+  - npm install -g bower
+  - npm install -g express
+  - npm install
+  - bower install
+script: gulp
