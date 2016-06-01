@@ -1,6 +1,7 @@
-var app = angular.module("UpdateApp", []);
+var app = angular.module("dbmanageApp", []);
 
-app.controller("UpdateController", function($scope, $http) {
+app.controller("DbmanageController", function($scope, $http) {
+  $scope.mode;
 
   $scope.allergic = [['true', '많음'], ['false', '적음']];
   $scope.absent = [['true', '가능'], ['false', '불가능']];

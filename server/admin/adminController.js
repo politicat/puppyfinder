@@ -5,6 +5,10 @@ var api = {
     res.sendFile('admin.html', {root: './server/admin'});
   },
 
+  getDbManagePage: function(req, res) {
+    res.sendFile('dbmanage.html', {root: './server/admin'});
+  },
+
   getUploadPage: function(req, res) {
     res.sendFile('upload.html', {root: './server/admin'});
   },
