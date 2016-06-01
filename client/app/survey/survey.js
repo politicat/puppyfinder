@@ -1,6 +1,7 @@
+import 'angular';
 angular.module('puppyfinder.survey', [])
 
-.controller('SurveyController', function($scope, $window, $location, QuestionList, Result) {
+.controller('SurveyController', ['$scope', '$window', '$location', 'QuestionList', 'Result', function($scope, $window, $location, QuestionList, Result) {
   /* Get the question list from the factory and insert into this scope */
 	$scope.questions = QuestionList.questions;
 
@@ -31,4 +32,4 @@ angular.module('puppyfinder.survey', [])
 	$scope.scrollTo = function(index) {
 		$scope.topIndex = index;
 	};
-});
+}]);

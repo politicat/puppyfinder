@@ -1,6 +1,7 @@
+import 'angular';
 angular.module('puppyfinder.result', [])
 
-.controller('ResultController', function ($window, $scope, $sce, RelatedContents) {
+.controller('ResultController', ['$window', '$scope', '$sce', 'RelatedContents', function ($window, $scope, $sce, RelatedContents) {
   /* Put results from survey.js in window scope into this scope's results variable */
   $scope.results = $window.results;
   /* Initialize method when ResultController is loaded in the DOM */
@@ -37,4 +38,4 @@ angular.module('puppyfinder.result', [])
     dog.currentVideo = video;
   };
 
-});
+}]);

@@ -1,0 +1,1174 @@
+[33mcommit 454b7c0d4e38de9bf850f832b02eff3c360bcc40[m
+Merge: 1ff9858 b28625d
+Author: MinJeong Kim <min7859@gmail.com>
+Date:   Wed Jun 1 11:05:43 2016 +0900
+
+    Merge pull request #29 from MJ111/master
+    
+    (doc) Added TODOS
+
+[33mcommit b28625d3e7aebba290d12a5504e82bf326a239a6[m
+Author: Minjeong Kim <min7859@gmail.com>
+Date:   Wed Jun 1 11:03:03 2016 +0900
+
+    (doc) Added TODOS
+    
+    added issues to solve
+
+[33mcommit 1ff9858af2779b5c543a3adc6dbb2346e052e36b[m
+Merge: 1d68ee4 5ec57ba
+Author: NyeonKim <nyeonkim91@gmail.com>
+Date:   Tue May 31 15:56:40 2016 +0900
+
+    Merge branch 'master' of https://github.com/codearena153/PuppyFinder
+
+[33mcommit 5ec57bac83b493462192e4054be841cd67eddd07[m
+Merge: d9b1cbd 2876dda
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Tue May 31 15:53:34 2016 +0900
+
+    Merge pull request #54 from heliotherapyy/master
+    
+    (fix) fix calculateTotalWeight
+
+[33mcommit d9b1cbd6cd729b9bc24cff5ff22998df6a069403[m
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Tue May 31 15:52:48 2016 +0900
+
+    Update README.md
+
+[33mcommit 2876dda748a230c15c90b1259e3e1fa797abc41a[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 31 15:51:33 2016 +0900
+
+    (fix) fix calculateTotalWeight
+
+[33mcommit 554223309fee6bb699f302a49ea32e74d83beb68[m
+Merge: 86cf620 fbfbe55
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Tue May 31 15:46:04 2016 +0900
+
+    Merge pull request #53 from heliotherapyy/master
+    
+    (fix) add asset images
+
+[33mcommit 1d68ee40f153e106934cb96538701ecd72ba39ca[m
+Merge: 8ffc3a4 45ba191
+Author: MinJeong Kim <min7859@gmail.com>
+Date:   Tue May 31 14:20:21 2016 +0900
+
+    Merge pull request #14 from waffle-iron/master
+    
+    waffle.io Badge
+
+[33mcommit 45ba19181467c1721c9b6ea5425ca6f4a3a24cdd[m
+Author: Making GitHub Delicious <iron@waffle.io>
+Date:   Mon May 30 23:19:47 2016 -0600
+
+    add waffle.io badge
+
+[33mcommit 86cf620b1bf2ace11e785be34fba634d59d86f1b[m
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Tue May 31 13:02:04 2016 +0900
+
+    Update README.md
+
+[33mcommit 8ffc3a4dd72c726ec1c74d2587f48684d4cf10ad[m
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Tue May 31 12:56:56 2016 +0900
+
+    Update README.md
+
+[33mcommit 8483fb0da2674d554e88bfbb7c2883acc1a381d9[m
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Tue May 31 12:56:10 2016 +0900
+
+    Update README.md
+
+[33mcommit 3f434ffed16884282e4ca5574adb73dffa93a44f[m
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Tue May 31 12:55:43 2016 +0900
+
+    Update README.md
+
+[33mcommit 5d069549c753aa1391c00037ad7703e15e2ae155[m
+Author: qjincho <qjin86@gmail.com>
+Date:   Tue May 31 11:57:10 2016 +0900
+
+    (doc) Update further goals
+
+[33mcommit fbfbe55275f9c58b3bd69f052121eb8f22635619[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 30 19:07:35 2016 +0900
+
+    (fix) add survey
+
+[33mcommit 8f6855cfa66816f6a7c94f7cdd4ab3c4eaeaf852[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 30 19:05:33 2016 +0900
+
+    final
+
+[33mcommit 35bb82bfc64372c97ad27409da6a6a0be12a6057[m
+Merge: c6fd955 0acabb6
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Mon May 30 18:30:10 2016 +0900
+
+    Merge pull request #51 from heliotherapyy/master
+    
+    (feat) add video background for intro
+
+[33mcommit 0acabb6b30ffde1f905254ce77e1f2a6e7c95168[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 30 18:29:05 2016 +0900
+
+    (feat) add video background for intro
+
+[33mcommit c6fd95569f1287bfdbb68e9b1171958e8f8e1636[m
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Mon May 30 18:28:29 2016 +0900
+
+    Update README.md
+
+[33mcommit bc1e4c02dc851ed68ef88702ff083b14d4ebfc09[m
+Merge: 369cb6e 3410c18
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Mon May 30 18:00:20 2016 +0900
+
+    Merge pull request #50 from qjincho/doc
+    
+    (Feat) Fix styles (in process...)
+
+[33mcommit 3410c1880e64d5b0b77698aec0b8410619855dd8[m
+Author: Qjin Cho <qjin86@gmail.com>
+Date:   Mon May 30 17:57:22 2016 +0900
+
+    (Feat) Fix styles (intro.html)
+
+[33mcommit d875b38138ecd29219de16c41fc333c2162a1d07[m
+Author: Qjin Cho <qjin86@gmail.com>
+Date:   Mon May 30 16:31:24 2016 +0900
+
+    (feat) Fix style in result.html (tab, youtube list)
+
+[33mcommit 369cb6ebb3e8b69c76d73a8bcbb916d27adf5124[m
+Merge: 86a1f46 aab9a95
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Mon May 30 17:44:17 2016 +0900
+
+    Merge pull request #49 from heliotherapyy/master
+    
+    (feat) add puppy images
+
+[33mcommit aab9a95c98df32058143d4ee349d541d7a2eb410[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 30 17:43:13 2016 +0900
+
+    (feat) add puppy images
+
+[33mcommit 86a1f467a33c6d9b4c322fed2befedc9ea9a08b6[m
+Merge: acd00f0 5b75eee
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Mon May 30 16:34:27 2016 +0900
+
+    Merge pull request #47 from heliotherapyy/master
+    
+    (fix) add image field to admin/update
+
+[33mcommit 5b75eeeda09a52fdb53c0ecfd58b47665bd4e553[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 30 16:27:28 2016 +0900
+
+    (fix) add image field to admin/update
+
+[33mcommit acd00f0f432dbeb5042a00d8e3a3dcadc4eb9399[m
+Author: qjincho <qjin86@gmail.com>
+Date:   Mon May 30 14:37:33 2016 +0900
+
+    Update readme.md
+
+[33mcommit 61ed3a716e243bbf678fd2e1253944e332bbf088[m
+Author: qjincho <qjin86@gmail.com>
+Date:   Mon May 30 14:33:13 2016 +0900
+
+    Update README.md
+
+[33mcommit 43b1f193f84f55d781425a6fb5a897a04adfa9dd[m
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Mon May 30 14:29:01 2016 +0900
+
+    Update README.md
+
+[33mcommit bf48c9994df49ed6739744c836fe27ad0846250e[m
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Mon May 30 14:24:02 2016 +0900
+
+    Update README.md
+
+[33mcommit de65fc0810edbed29902bf4825dace5e5ef2f340[m
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Mon May 30 14:14:23 2016 +0900
+
+    Update package.json
+
+[33mcommit f82211b0acbdaf2e0d6b0247bfe30b39bdc7ca68[m
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Mon May 30 14:13:34 2016 +0900
+
+    Update README.md
+
+[33mcommit b37e1d8bc94ed0ca1d1131c1c35622300498dcab[m
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Mon May 30 14:11:52 2016 +0900
+
+    Update README.md
+
+[33mcommit f7a179f5d06f990b5aa6dfa66ae6f14c0edc2878[m
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Mon May 30 14:08:15 2016 +0900
+
+    Update README.md
+
+[33mcommit aeec74ee31cc95ed23a2140705f298bdc1f4b2b4[m
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Mon May 30 13:48:50 2016 +0900
+
+    (doc) Add README template
+    
+    We modified it to fit our purpose
+
+[33mcommit 61af37b186152ce6e6d486c5f152471b59ad51ff[m
+Merge: 512d1f2 61c3e36
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Mon May 30 13:33:32 2016 +0900
+
+    Merge pull request #44 from heliotherapyy/master
+    
+    (doc) server side- add comments
+
+[33mcommit 61c3e363bea28734bcaadc44d9d143b572d4db2c[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 30 13:28:35 2016 +0900
+
+    (feat/doc) increase num_selected for matching puppies + add comments
+
+[33mcommit b1bc827ff1bffb869676c6ad036654c707a45e4e[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 30 13:28:16 2016 +0900
+
+    (doc) add comments
+
+[33mcommit d8e8c2a8e5e0e46cf9736baecdb83e18db695742[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 30 13:09:49 2016 +0900
+
+    (doc) add comments
+
+[33mcommit e8b4955eba10808eaf1f8e50dfbc3bfc7c65a269[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 30 11:18:12 2016 +0900
+
+    (doc) add comments
+
+[33mcommit 512d1f240fec2c659e260e54c16f58e71a817e0f[m
+Merge: 0bf1575 e590a61
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Mon May 30 13:30:21 2016 +0900
+
+    Merge pull request #43 from qjincho/doc
+    
+    (doc) Add comments to client files
+
+[33mcommit e590a61f6a4279d9e96ffb06fc0245bf091d7c9e[m
+Author: Qjin Cho <qjin86@gmail.com>
+Date:   Mon May 30 12:48:40 2016 +0900
+
+    (doc) Add comments to client files
+
+[33mcommit 0bf1575af6dfba7d7c0c5ae80fa9e60ba38b5475[m
+Merge: 0485e3c dadb3d4
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Mon May 30 09:51:34 2016 +0900
+
+    Merge pull request #42 from qjincho/feat
+    
+    (Feat) Apply angular-material (35%)
+
+[33mcommit dadb3d40b58d4816338022e725f7c6bc9002962b[m
+Author: Qjin Cho <qjin86@gmail.com>
+Date:   Mon May 30 08:56:33 2016 +0900
+
+    (feat) Apply angular-material
+
+[33mcommit b9c2fb46fb8803bdfd558668f7624edc3c9b4897[m
+Author: Qjin Cho <qjin86@gmail.com>
+Date:   Mon May 30 05:40:51 2016 +0900
+
+    (feat) Apply angular-material (in progress)
+    
+    Applying angular-material module to app.
+
+[33mcommit 0485e3c13f2b489fe7b59356c7df0d159d5e64dc[m
+Merge: 7c1e624 b7eb7ca
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Sun May 29 15:00:27 2016 +0900
+
+    Merge pull request #40 from qjincho/feat
+    
+    (Feat) Render the result page
+
+[33mcommit 7c1e624a2ade70becddac489417622ba2ad99b60[m
+Merge: d33b974 8ea3556
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Sun May 29 14:59:54 2016 +0900
+
+    Merge pull request #38 from kcrossfitter/feat
+    
+    (feat) [admin.html] apply bootstrap, change links into bootstrap anch…
+
+[33mcommit b7eb7ca828fcfd080363e5c166fc9913c859ac21[m
+Author: Qjin Cho <qjin86@gmail.com>
+Date:   Sun May 29 14:42:34 2016 +0900
+
+    (feat) Make survey validation more subtle
+
+[33mcommit 98784c98d2e5b11dfdf8260525da86dd84cc50f3[m
+Author: Qjin Cho <qjin86@gmail.com>
+Date:   Sun May 29 14:19:08 2016 +0900
+
+    (feat) Refactor survey forms for validation
+
+[33mcommit 55f251cce2c4d2cb61262e9e875092314962a30b[m
+Author: Qjin Cho <qjin86@gmail.com>
+Date:   Sun May 29 09:54:53 2016 +0900
+
+    (feat) Link video list to play when clicked in the result page.
+
+[33mcommit 195a9a32d68f33dea52943434b6872c6ccdd4678[m
+Author: Qjin Cho <qjin86@gmail.com>
+Date:   Sun May 29 01:26:10 2016 +0900
+
+    (fix) Fix youtube query to get actually dog-related videos
+
+[33mcommit 3012eda1197e55bf514e3cd0f6842fa7aef4a253[m
+Author: Qjin Cho <qjin86@gmail.com>
+Date:   Sun May 29 01:22:15 2016 +0900
+
+    (Feat) Fetch dog-related photos in the result page
+
+[33mcommit 0d3cb0dc74a36e3f6078f81b22b328b9540e61b5[m
+Author: Qjin Cho <qjin86@gmail.com>
+Date:   Sat May 28 19:09:23 2016 +0900
+
+    (feat) Add twitter api (not working, auth problem)
+    
+    Tried Instagram, google custom search and twitter api.
+    All of them have auth problem.
+
+[33mcommit 8ea35568a4f3e44e6b976184bf678809ec7dbcea[m
+Author: CHOSANG WOOK <chosangwook@CHOSANGui-MacBook-Pro.local>
+Date:   Sat May 28 15:22:26 2016 +0900
+
+    (feat) [admin.html] apply bootstrap, change links into bootstrap anchor buttons
+    (feat) [remove.html] apply bootstrap
+    (feat) [update.html] apply bootstrap, correct selected option problem in select tag, successfully update
+    (feat) [upload.html] apply bootstrap, apply angular(now pair with add.js)
+    (feat) [update.js] update successfully, all cases(undefined, truncated) resolved
+    (feat) [add.js] new angular JS, upload new puppy data, change upload data formatfrom form data to angular model data, so req.body format is changed
+    (feat) [server.js] change app.post('/result') due to modified req.body format
+
+[33mcommit f07a28662dc87f2f78a755b42948807d3d529943[m
+Author: Qjin Cho <qjin86@gmail.com>
+Date:   Sat May 28 10:17:39 2016 +0900
+
+    (Fix) Change post(/search) request to get(/search) in server.js
+
+[33mcommit d33b974d77e4a0cd3ec7975f38fc92a5831c2880[m
+Merge: 604ed2a c302294
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Sat May 28 09:45:25 2016 +0900
+
+    Merge pull request #36 from heliotherapyy/master
+    
+    (fix) refactor codes
+
+[33mcommit c302294b94a5fe763d93d653f5e207ac92231469[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Sat May 28 09:42:55 2016 +0900
+
+    (fix) remove periods for selecting opions
+
+[33mcommit dce454148f747f191565020af8eb88b0af125a65[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Sat May 28 09:36:52 2016 +0900
+
+    (fix) indicate currency (KRW) in selecting options
+
+[33mcommit ea4998b1054dd9c689eb57750c1da23c35765627[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Sat May 28 09:32:01 2016 +0900
+
+    (cleanup) remove unncessary codes
+
+[33mcommit 604ed2a6b277aefc6db3a4200554a2d7851fd989[m
+Merge: b5c2719 e0d6ab0
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Fri May 27 23:40:11 2016 +0900
+
+    Merge pull request #33 from qjincho/feat
+    
+    (Feat) Send actual query to db from survey page
+
+[33mcommit e0d6ab0537648077d2bf744d0b49514ae1e40a01[m
+Author: Qjin Cho <qjin86@gmail.com>
+Date:   Fri May 27 22:21:13 2016 +0900
+
+    (fix) Refactor question_list in app.js to make options repeat
+    
+    Refactor question_list in app.js to make options to repeat in survey.js
+    Fix async problem in result page
+
+[33mcommit 5728183dfaaca980e5734a3e502347d63bd56f7d[m
+Author: Qjin Cho <qjin86@gmail.com>
+Date:   Fri May 27 15:38:35 2016 +0900
+
+    (feat) Connect sendQuery function in survey page to result page
+
+[33mcommit 059df8242842737f133c51839324b7d7ec50cf5d[m
+Author: Qjin Cho <qjin86@gmail.com>
+Date:   Fri May 27 14:27:20 2016 +0900
+
+    (Fix) Move factories from result.js to app.js
+
+[33mcommit b5c271975422f422df44fda5e7ef096ef3ae0c97[m
+Merge: 002b8e7 8657585
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Thu May 26 19:34:31 2016 +0900
+
+    Merge pull request #31 from heliotherapyy/master
+    
+    (feat) finish milestone: backend Skeleton
+
+[33mcommit 8657585b4e6618e4aff88b6ef90bfdaa2c4fe9de[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Thu May 26 19:30:24 2016 +0900
+
+    (feat) add more contents to be initiated for puppies collection
+
+[33mcommit 0b26753ceb03f326c2a18378d8a11b37d84079bf[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Thu May 26 19:18:50 2016 +0900
+
+    (feat) add initial contents to local mongoDB after collections being dropped
+    
+    So that everyone starts from the same page in terms of mongoDB status
+
+[33mcommit 1bd8a9a2fc841d0f554c3c64094777b1d536525a[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Thu May 26 19:18:20 2016 +0900
+
+    (fix) switch data type from Boolean to String
+
+[33mcommit 3fbe4bc2caac0db8d139306c3844e3431982849f[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Thu May 26 17:54:33 2016 +0900
+
+    (feat) returns 3 matching puppies
+
+[33mcommit d9f0760730fbf668ffe248361963ed7fdfc863c3[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Thu May 26 17:24:19 2016 +0900
+
+    (feat) add .data to store use input dynamically
+
+[33mcommit aefc814a44f3f90bbeeec0e02517d7a1c6a2f8a8[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Thu May 26 17:11:54 2016 +0900
+
+    (feat) survey.html now accepts user data and stores it as $scope.data.puppyData
+
+[33mcommit 002b8e73cf8622a0af6af3dc532943c7032185df[m
+Merge: c32ad01 da6e972
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Thu May 26 15:18:48 2016 +0900
+
+    Merge pull request #29 from heliotherapyy/master
+    
+    (feat) create /update, /remove and refactor codes
+
+[33mcommit da6e97206564777b1788a944945f5e4519f591bf[m
+Merge: 6b672fb 47e3937
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Thu May 26 15:16:42 2016 +0900
+
+    (feat) add contents to admin/update, admin/remove.
+    
+    - admin user removes puppy data going through mongoose
+    - admin/update is in progress
+
+[33mcommit 47e3937b9f60dd39aa7afe00f1ac17aa0266eb49[m
+Merge: 4642379 28fa3a0
+Author: CHOSANG WOOK <chosangwook@CHOSANGui-MacBook-Pro.local>
+Date:   Thu May 26 15:03:54 2016 +0900
+
+    Merge branch 'feat'
+
+[33mcommit 464237926365e8c301a5f3a41cce78758ec77bee[m
+Merge: dc5bbbf 5dc1bd5
+Author: CHOSANG WOOK <chosangwook@CHOSANGui-MacBook-Pro.local>
+Date:   Thu May 26 15:01:55 2016 +0900
+
+    Merge branch 'master' of https://github.com/kcrossfitter/puppyfinder
+
+[33mcommit 28fa3a0ac85c37cfafe03518791b44aec7dc8ba6[m
+Author: CHOSANG WOOK <chosangwook@CHOSANGui-MacBook-Pro.local>
+Date:   Thu May 26 14:53:58 2016 +0900
+
+    server, remove, update
+
+[33mcommit de9b19cb5c34f5fb2f24550ec45ae26723802813[m
+Author: CHOSANG WOOK <chosangwook@CHOSANGui-MacBook-Pro.local>
+Date:   Wed May 25 16:25:56 2016 +0900
+
+    server configuration change
+
+[33mcommit 6b672fb8213691313b2935e5c36570908b1025c5[m
+Merge: 18c71eb 947fbe5
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Thu May 26 14:52:03 2016 +0900
+
+    Merge branch 'refactor'
+
+[33mcommit 947fbe5ab74246831622a4acdcc7a04b233de893[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Thu May 26 14:48:14 2016 +0900
+
+    (refactor) create config/helpers.js to refactor modules
+    
+    Now in server.js, you can load helper functions so that it does not hides logics behind
+    Server should only focus on middlewares and routing
+
+[33mcommit 0397aa261a6a4aabf2c2b7e31ea357c8230c47d6[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Thu May 26 14:26:28 2016 +0900
+
+    (cleanup) remove questions.js file
+    
+    We don't need this anymore since question list is defined as part of QuestionList Factory
+
+[33mcommit f837dc0418669296abdf63eaad0c6e20fe12131f[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Thu May 26 12:38:55 2016 +0900
+
+    (fix) fix admin/upload.html to ask admin user to put pre-defined values only for initialCost and maintenance
+    
+    There was a bug when admin user puts values that are not catched by switch case in server.js
+    For example, when the user puts 34 for its maximum initial cost, it gives NaN our switch case only handles 10, 20, 30, 50, 100, 150
+    So we added comments to the upload.html to ask admin user to choose one of the values provided
+
+[33mcommit c56db06cf46d0dcd8a2915f2338fa4acf20bf9d1[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Thu May 26 12:10:30 2016 +0900
+
+    (fix) modify min, max value in admin/upload.html for 최대양육비용
+
+[33mcommit c71b6e71a642c2eb8b661e865c19d9d5f8579c50[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Thu May 26 11:50:27 2016 +0900
+
+    (refactor) refactor survey question list into a separate js file
+
+[33mcommit dc5bbbf8bdf713b37d448b9940c5678c6b2e0aa6[m
+Author: CHOSANG WOOK <chosangwook@CHOSANGui-MacBook-Pro.local>
+Date:   Wed May 25 16:25:56 2016 +0900
+
+    server configuration change
+
+[33mcommit 18c71eb973e7f43c89dc723237112adfc537cb48[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Thu May 26 12:04:34 2016 +0900
+
+    (cleanup) delete console log statements for debugging
+
+[33mcommit 06e54a17d0f05809088ec6c01f931f41a7d33e9f[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Thu May 26 11:50:27 2016 +0900
+
+    (refactor) refactor survey question list into a separate js file
+
+[33mcommit c32ad017435767a44dde64687367260bd289cbc9[m
+Merge: 442b7f3 b90edd9
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Thu May 26 10:03:18 2016 +0900
+
+    Merge pull request #21 from heliotherapyy/master
+    
+    (feat) add proper contents to radio option buttons
+
+[33mcommit b90edd9a9de6f29e751653f606d03bb4009e4087[m
+Merge: 16329e0 ec4fddc
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Thu May 26 09:58:48 2016 +0900
+
+    Merge branch 'master' of https://github.com/heliotherapyy/puppyfinder
+
+[33mcommit 16329e0e17c54cc35fdc476516b8f7113cab4afa[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Wed May 25 16:20:51 2016 +0900
+
+    (feat) in progress of syncing user input data into the survey object in SurveyController
+    
+    Before sending http post request to /search, we need to create a 'survey' object which contains data for later db search
+
+[33mcommit 58365890d3293899a9c50648dd4caeb6d9bd9f60[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Wed May 25 15:58:17 2016 +0900
+
+    (feat) add proper contents to radio button options
+    
+    Survey questions that provide more than 2 options now render properly
+
+[33mcommit 9a8f12ae1c8878b363c4c609b3de51a82feea465[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Wed May 25 15:25:31 2016 +0900
+
+    (feat) create /search route to handle user input
+    
+    Given user input will be used to calculate the total_weight and finally returns 3 puppies with close total_weight
+
+[33mcommit 4e35447f1d791c221f09e0d15804028c26bc7620[m
+Author: CHOSANG WOOK <chosangwook@CHOSANGui-MacBook-Pro.local>
+Date:   Wed May 25 13:42:54 2016 +0900
+
+    (feat)upload.html: change input field's max, min value
+    (feat)server.js: calculate weight and return total_weight
+
+[33mcommit 442b7f3d0e5506697c8f4096125e5cdd55832677[m
+Merge: 5f45a86 55b415e
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Thu May 26 09:46:05 2016 +0900
+
+    Merge pull request #19 from onyoon7/feature-branch
+    
+    (feat) Modify the html/css using by bootstrap
+
+[33mcommit 55b415eef18227b40c667919fe08dd516b969eeb[m
+Author: Byungjune Yoon <on.yoon7@gmail.com>
+Date:   Thu May 26 02:34:43 2016 +0900
+
+    (fix) Modify the html/css to wireframe
+    
+    Create the home button in nav and next button in survey page, only the last button is different to go the next.
+
+[33mcommit a4337b259e97ab03bb1e222eac60282eb0ae6734[m
+Author: Byungjune Yoon <on.yoon7@gmail.com>
+Date:   Wed May 25 19:17:16 2016 +0900
+
+    (feat) Fix style.css(in progress)
+
+[33mcommit fe8396b980a1a71f2f5f157558804c0858601513[m
+Author: Byungjune Yoon <on.yoon7@gmail.com>
+Date:   Wed May 25 17:04:16 2016 +0900
+
+    (fix) Delete index.html in /puppyfinder
+
+[33mcommit 9c18c77d00afa19accf9668fffc503e971e767a3[m
+Author: Byungjune Yoon <on.yoon7@gmail.com>
+Date:   Wed May 25 16:56:24 2016 +0900
+
+    (fix) Merge the data with html/css files to make the responsive web
+
+[33mcommit 5dc1bd58eb4fecd0fae056aea51cbd36638af4e5[m
+Author: CHOSANG WOOK <chosangwook@CHOSANGui-MacBook-Pro.local>
+Date:   Wed May 25 16:25:56 2016 +0900
+
+    server configuration change
+
+[33mcommit ec4fddc2a9d63956dbdcca05312abf87ec0c852e[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Wed May 25 16:20:51 2016 +0900
+
+    (feat) in progress of syncing user input data into the survey object in SurveyController
+    
+    Before sending http post request to /search, we need to create a 'survey' object which contains data for later db search
+
+[33mcommit a3fe1b5e60ec87613c4104e6004738f4172aa8b7[m
+Author: Byungjune Yoon <on.yoon7@gmail.com>
+Date:   Wed May 25 16:06:25 2016 +0900
+
+    (feat)add css files and jQuery with Bootstrap
+    
+    add css files for responsive web and make a nav for team introduction page or etc
+
+[33mcommit 7d2004fc1308dac25bf8db66d2ccfff648d45f40[m
+Author: Byungjune Yoon <on.yoon7@gmail.com>
+Date:   Mon May 23 22:02:47 2016 +0900
+
+    (Fix)server error code
+
+[33mcommit c40a02a41fe10ad96f2ef16736a367bd8cff3216[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Wed May 25 15:58:17 2016 +0900
+
+    (feat) add proper contents to radio button options
+    
+    Survey questions that provide more than 2 options now render properly
+
+[33mcommit c815df5d8011a3800a5f75168ff66303e0b0800c[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Wed May 25 15:25:31 2016 +0900
+
+    (feat) create /search route to handle user input
+    
+    Given user input will be used to calculate the total_weight and finally returns 3 puppies with close total_weight
+
+[33mcommit f78ca565d04354411687e056d649ef9db56f904c[m
+Merge: 5f45a86 ca0d12b
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Wed May 25 13:55:14 2016 +0900
+
+    Merge branch 'master' of https://github.com/heliotherapyy/puppyfinder
+
+[33mcommit ca0d12b8339acf49f73f993540315e74fb4fcf08[m
+Merge: 7d8119a 146bde2
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Wed May 25 13:54:07 2016 +0900
+
+    Merge pull request #1 from kcrossfitter/master
+    
+    (feat) calculate total_weight and add it to the db using admin/upload.html
+
+[33mcommit 146bde2ef005d70f03a076dbd134dc29c0788e0e[m
+Author: CHOSANG WOOK <chosangwook@CHOSANGui-MacBook-Pro.local>
+Date:   Wed May 25 13:42:54 2016 +0900
+
+    (feat)upload.html: change input field's max, min value
+    (feat)server.js: calculate weight and return total_weight
+
+[33mcommit 5f45a860c6c198b9c0584fecf530ffcdd788d510[m
+Merge: 3141e3f ed16cb6
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Wed May 25 13:25:38 2016 +0900
+
+    Merge pull request #18 from qjincho/feat
+    
+    (feat) Load related youtube videos on the result page
+
+[33mcommit ed16cb6393f5539a39f4ccbab4c2b46c0c4772a5[m
+Author: Qjin Cho <qjin86@gmail.com>
+Date:   Wed May 25 13:10:14 2016 +0900
+
+    (feat) Load youtube videos on the result page
+
+[33mcommit 32b5dbab35732564b4b8b2b92f0af38930965d61[m
+Author: Qjin Cho <qjin86@gmail.com>
+Date:   Wed May 25 08:45:45 2016 +0900
+
+    (bug) Delete duplicated app folder in the root folder
+    
+    There was a duplicated version of app folder in the root folder
+    so I deleted it and fixed the result.html and js in client/app folder.
+
+[33mcommit edc6cd25021eaeaedf46bfeef291354b173b3789[m
+Author: Qjin Cho <qjin86@gmail.com>
+Date:   Wed May 25 08:42:50 2016 +0900
+
+    (feat) Add related videos to result.html and js
+
+[33mcommit 38429ab89cadeae689cac2bbfc4a5d0194f619e6[m
+Author: Qjin Cho <qjin86@gmail.com>
+Date:   Wed May 25 08:42:15 2016 +0900
+
+    (fix) fix .gitignore to ignore .DS_Store
+
+[33mcommit 3141e3f6fa2c682af128c56095b5e56623ce484c[m
+Merge: 333a6d8 7d8119a
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Wed May 25 13:11:15 2016 +0900
+
+    Merge pull request #17 from heliotherapyy/master
+    
+    (feat) add contents to survey.html
+
+[33mcommit 7d8119a89affc11008ebebe66ef0bd3363aed23b[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Wed May 25 13:09:04 2016 +0900
+
+    (doc) add comments to questions.js
+
+[33mcommit 1485f2011e1adfa11aa4ea2a74cbea82d0be5001[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Wed May 25 13:04:33 2016 +0900
+
+    (feat) add contents to survey.html
+    
+    Now it shows the data provided by the wireframes, not meaningless texts
+
+[33mcommit 333a6d8bc49411d0b9c0251f926f29bf20b96a6c[m
+Merge: ff2f2a1 f0675be
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Wed May 25 11:28:43 2016 +0900
+
+    add admin site to upload puppy data
+
+[33mcommit f0675be5d4ba95c97f1057dd6c53992417bd6fc3[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Wed May 25 11:27:15 2016 +0900
+
+    (fix) fix middleware 'static' to render angular pages
+
+[33mcommit e67d5093e385bdc7c9af8c94e10874cb50d4e5aa[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 22:22:21 2016 +0900
+
+    (feat) make query request to mongodb via admin/upload.html
+
+[33mcommit 880a0eeef5f228e9003b192e5cdaa6d081b25059[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 18:57:52 2016 +0900
+
+    (feat) add contents to upload.html & add data passed by upload.html to local mongodb
+    
+    Now admin user can add puppy data to mongo db using upload.html page
+
+[33mcommit 66f23cff46680ae683bd301cd801f00cd8798a1a[m
+Merge: 425fad4 71e450a
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 16:54:19 2016 +0900
+
+    merging
+
+[33mcommit 425fad464bbb9752bccfcbadd69f01fe47af993b[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 16:51:05 2016 +0900
+
+    (feat) add upload/update/stat pages for admin use
+
+[33mcommit 15baf3e03269c2df18e5250000a94e2eafe9a256[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 16:17:12 2016 +0900
+
+    (feat) add admin site to add puppy data into the local db
+    
+    The skeleton was provided by kcrossfitter, and now will be editted according to the updated schema
+
+[33mcommit ded55f8b6257d946aa581d52843d805913ec7280[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 16:07:50 2016 +0900
+
+    (refactor) create server/db directories + add mongo db schema
+
+[33mcommit ff2f2a1e40990f3f23e2207c2682cc12cb85b23a[m
+Merge: 1f405a2 71e450a
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Tue May 24 10:45:56 2016 +0900
+
+    Merge pull request #13 from heliotherapyy/master
+    
+    (feat) add contents to intro/survey/result html
+
+[33mcommit 227330f81311354942ec678c21994402a5336239[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 10:45:40 2016 +0900
+
+    (fix) fix index.html
+
+[33mcommit 71e450a0a534b01885b545c5f1f36c1bb5100c9d[m
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Tue May 24 01:41:42 2016 +0900
+
+    Add files via upload
+
+[33mcommit 4a039e502853ea420e149cf311f169ded2269906[m
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Tue May 24 01:39:27 2016 +0900
+
+    Add files via upload
+
+[33mcommit c2330d86e2dc96631973e1e3e68825e330f39688[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 00:35:47 2016 +0900
+
+    (bug) fix git pull issue
+
+[33mcommit b8807838ae2e55da5000f035b5a0312e94a94669[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 00:01:18 2016 +0900
+
+    (feat) add contents to survey/result html
+
+[33mcommit a8f9a668dc2454c7750a156b1b38c2f2ea6ed4d7[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 23 23:54:04 2016 +0900
+
+    (feat) add contents to intro.html
+
+[33mcommit e025192b739f72cdce3bda32f6ce8445a1f0acd7[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 23 23:02:52 2016 +0900
+
+    (feat) bower install angular-route
+
+[33mcommit c0c95bd9dd63d734fdc8df6632de925f23400c7d[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 00:01:18 2016 +0900
+
+    (feat) add contents to survey/result html
+
+[33mcommit 24a308099670b44ac6a8075e33e5dc7261b839fe[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 23 23:54:04 2016 +0900
+
+    (feat) add contents to intro.html
+
+[33mcommit 9b05d3cc2cd94ed34852a9981a982f8b4725b9ed[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 23 23:02:52 2016 +0900
+
+    (feat) bower install angular-route
+
+[33mcommit a485ee72d09f6557ab9a18eff818f5070cd04da0[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 00:08:51 2016 +0900
+
+    (fix) fix .gitignore files
+    
+    Now git ignores node_modules directory no matter where the folders with this name are located
+
+[33mcommit c68985f3adcd3af92c16ff7f617d83b5e9977227[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 00:01:18 2016 +0900
+
+    (feat) add contents to survey/result html
+
+[33mcommit bc4f9b25e9ce68d629b99a2fb673b7a2f6e3001c[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 23 23:54:04 2016 +0900
+
+    (feat) add contents to intro.html
+
+[33mcommit c159d209e2e75582d11e1f79f91d9734b952e4f0[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 23 23:02:52 2016 +0900
+
+    (feat) bower install angular-route
+
+[33mcommit 33846e92a33f052ac49bfa7e30f7c87c30010f31[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 00:01:18 2016 +0900
+
+    (feat) add contents to survey/result html
+
+[33mcommit f81083cdf437245beeb3494d6c48cf44c399607a[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 23 23:54:04 2016 +0900
+
+    (feat) add contents to intro.html
+
+[33mcommit a907eb6fc512d8b4eedbd810e755a4b93189b7f1[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 23 23:02:52 2016 +0900
+
+    (feat) bower install angular-route
+
+[33mcommit 172cfb416a672844457d3cd689b7ce331205c532[m
+Merge: 803abc5 9c06c08
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 00:21:35 2016 +0900
+
+    Merge branch 'master' of https://github.com/heliotherapyy/puppyfinder
+
+[33mcommit 803abc5835f787ab7559152d9bfa2ca04d7a1675[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 00:08:51 2016 +0900
+
+    (fix) fix .gitignore files
+    
+    Now git ignores node_modules directory no matter where the folders with this name are located
+
+[33mcommit e52dbf9ddb3b80809bfadacf11658d21fc3ebbd7[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 00:01:18 2016 +0900
+
+    (feat) add contents to survey/result html
+
+[33mcommit b47013a0f337fbbcb396e3f4a294035172310564[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 23 23:54:04 2016 +0900
+
+    (feat) add contents to intro.html
+
+[33mcommit 71e611a559e063a06a852a311ad122bee711abe6[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 23 23:02:52 2016 +0900
+
+    (feat) bower install angular-route
+
+[33mcommit d398aefce3ff1434587acef241fe3decbe56c1c8[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 00:01:18 2016 +0900
+
+    (feat) add contents to survey/result html
+
+[33mcommit 6b2fa9c405be8a7a8cf58316e18afafd21b6050a[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 23 23:54:04 2016 +0900
+
+    (feat) add contents to intro.html
+
+[33mcommit 08f558fe87fd0c652d3cc7bc38250c90c9debd1f[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 23 23:02:52 2016 +0900
+
+    (feat) bower install angular-route
+
+[33mcommit 9c06c08739e363a941e8786a0c1be159325635fd[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 00:08:51 2016 +0900
+
+    (fix) fix .gitignore files
+    
+    Now git ignores node_modules directory no matter where the folders with this name are located
+
+[33mcommit 2d92785903b12f469f91ccd1fe42a032d53adf35[m
+Merge: 1322a0c 62ae6f2
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 00:06:55 2016 +0900
+
+    Merge branch 'feat'
+
+[33mcommit 1322a0c02cfdff0caffb20389aa6c7ec855b6bab[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 00:01:18 2016 +0900
+
+    (feat) add contents to survey/result html
+
+[33mcommit 1581276d8d328aba4547ea7dee2cc3a9129e4675[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 23 23:54:04 2016 +0900
+
+    (feat) add contents to intro.html
+
+[33mcommit cc462c79cdf1242cca5fdcc3a9307cb955b7455b[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 23 23:02:52 2016 +0900
+
+    (feat) bower install angular-route
+
+[33mcommit 62ae6f213a834495ad246ac19af4f590b6acd110[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Tue May 24 00:01:18 2016 +0900
+
+    (feat) add contents to survey/result html
+
+[33mcommit fab004d056aec316d061635e77695c380b8869f0[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 23 23:54:04 2016 +0900
+
+    (feat) add contents to intro.html
+
+[33mcommit 6460160815f2b6d2dea5fb43112c023f96c7a88d[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Mon May 23 23:02:52 2016 +0900
+
+    (feat) bower install angular-route
+
+[33mcommit 1f405a28803111b50eaf279830e89316e52d277c[m
+Merge: 5962346 3cd670e
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Fri May 20 19:59:07 2016 +0900
+
+    Merge pull request #9 from heliotherapyy/master
+    
+    (fix) fix angular templates to work
+
+[33mcommit 3cd670e7787a2e928c2c076b0b00b8601b6f62f0[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Fri May 20 19:57:01 2016 +0900
+
+    (fix) fix angular templates to work
+
+[33mcommit 596234617612abf66dabd8c7e9b6a592f5439933[m
+Merge: 00d4a8a 846cda0
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Fri May 20 19:19:17 2016 +0900
+
+    Merge pull request #8 from heliotherapyy/master
+    
+    fix this
+
+[33mcommit 846cda0401dabf3b8789ea07d34c29eab0b02784[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Fri May 20 19:16:28 2016 +0900
+
+    (feat) implement Angular into the codebase
+    
+    Angular templates not working
+
+[33mcommit 322fd45f3a807337eea695d2866d2c54441b200e[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Fri May 20 18:26:12 2016 +0900
+
+    (feat) Add angular-route module
+    
+    All services related to routing requires this module
+
+[33mcommit 00d4a8abc2018037d3f06ca33870912d5ff7dc1a[m
+Merge: ec4da70 eae6294
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Fri May 20 17:31:42 2016 +0900
+
+    Merge pull request #6 from heliotherapyy/master
+    
+    (fix) Erase space before 8888
+
+[33mcommit eae629471a3053f71781b4613fdfe8cf622b95f6[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Fri May 20 17:28:45 2016 +0900
+
+    (fix) Erase space before 8888
+    
+    Users now can access to localhost:8888 by simply copying the address given by the terminal
+
+[33mcommit ec4da70abcb8e215a9ef077dc7ea33ffbe8d4993[m
+Merge: 802645e 8464c1e
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Fri May 20 16:10:18 2016 +0900
+
+    Merge pull request #5 from onyoon7/master
+    
+    (bug)Fix bower.json
+
+[33mcommit 8464c1ecc720b653fe010dd0172f1bed7a164bca[m
+Author: Byungjune Yoon <on.yoon7@gmail.com>
+Date:   Fri May 20 16:07:36 2016 +0900
+
+    (bug)Fix bower.json
+    
+    'lib' to "client/lib"
+
+[33mcommit 802645e03dba8329e3196882f5ed9c7b7d09ec4d[m
+Author: lennyKim <heliotherapyy@gmail.com>
+Date:   Fri May 20 15:51:25 2016 +0900
+
+    (config) Configure initial settings
+    
+    Make sure to bower/npm install before you develop
+
+[33mcommit 4e54054b1fcfebd80d71295fd3856a75870d79f2[m
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Thu May 19 16:35:40 2016 +0900
+
+    Add files via upload
+
+[33mcommit 7dbf4f564a91c8f06071dda29831121e8be5ea84[m
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Thu May 19 16:04:04 2016 +0900
+
+    Add files via upload
+
+[33mcommit 95ebdebbe24eed61d47841a44f9e5711e34c55fa[m
+Author: Lenny Hyungsuk Kim <heliotherapyy@gmail.com>
+Date:   Thu May 19 15:19:18 2016 +0900
+
+    Initial commit
