@@ -3,7 +3,7 @@ language: node_js
 node_js:
   - "4.4"
 
-#
+
 
 # Test script options
 before_script:
@@ -12,3 +12,16 @@ before_script:
   - npm install -g express
   - bower install --force
 script: gulp
+
+# Notify CI results
+notifications:
+  email: false
+    recipients:
+      - ykd1217@gmail.com
+    on_success: always
+    on_failure: never
+  slack:
+    rooms:
+      - ykd1217@gmail.com:xoxp-30782192067-32457964337-47226617495-3bae6b9f20#groupreact
+    on_success: always
+    on_failure: always
