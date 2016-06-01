@@ -1,0 +1,22 @@
+# Basic settings
+language: node_js
+node_js:
+  - "4.4"
+
+
+
+# Test script options
+before_script:
+  - npm install -g gulp
+  - npm install -g bower
+  - npm install -g express
+  - bower install --force
+# script: gulp
+
+# Notify CI results
+notifications:
+  email: false
+    # recipients:
+    #   - ykd1217@gmail.com
+    # on_success: always
+    # on_failure: never
