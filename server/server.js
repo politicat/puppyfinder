@@ -10,6 +10,7 @@ app.set('port', process.env.PORT || 8888);
 
 /* Initialize DB */
 var initDB = require('./config/init');
+// TODO 매번 db 초기화시킬 필요 없음
 initDB();
 
 // helper functions
@@ -32,6 +33,10 @@ app.use(bodyParser.urlencoded({
  * Routing Setup
  * Serves static files
  */
+// TODO single page로 합치기
+// 권한 인증하기
+// input validation
+// add.js <-> upload.html 파일명 통일하기
 app.get('/admin', function(req, res) {
   res.sendFile(__dirname + '/admin/admin.html');
 });
@@ -52,6 +57,7 @@ app.get('/stat', function(req, res) {
     res.sendFile(__dirname + '/admin/stat.html');
 });
 
+// TODO router 부분 따로 빼기
 /* Handles CRUD operations */
 /* GET all puppies in DB */
 app.get('/puppies', function(req, res) {
@@ -110,6 +116,7 @@ app.put('/puppies/:id', function(req, res) {
       return null;
     }
 
+    // TODO body에 object 변수로 보내고 받기
     puppy.breed = req.body.breed;
     puppy.description = req.body.description;
     puppy.image = req.body.image;
@@ -141,6 +148,7 @@ app.put('/puppies/:id', function(req, res) {
   });
 });
 
+// TODO query를 req.body로 보내기
 /* SEARCH and RETURN three matching puppies */
 app.get('/search', function(req, res) {
   var url_parts = url.parse(req.url, true);

@@ -23,6 +23,7 @@ app.controller("UpdateController", function($scope, $http) {
       });
   };
 
+  // TODO puppy input 유효한지 체크하기(빈칸 등)
   $scope.update = function(puppy) {
     $http.put("/puppies/" + puppy._id, puppy)
       .success(function(response) {
