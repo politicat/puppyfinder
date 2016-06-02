@@ -22,100 +22,140 @@
 </head>
 <body ng-app="dbmanageApp">
 
-  <div class="container" ng-controller="DbmanageController">
-    <h1 style="text-align: center">관리자 페이지</h1>
+  <div class="container" ng-controller="DbmanageController as ctrl">
+    <button ng-click="ctrl.goback()" class="btn btn-info pull-left" style="position: fixed; top: 0px; left: 0px;">
+      뒤로가기
+    </button>
 
-    <div ng-show="mode">
-      견종:
-      <input type="text" name="breed" maxlength="20" required value="{{puppy.breed}}" ng-model="puppy.breed"><br><br>
+    <h1 style="text-align: center">관리자 페이지 {{ctrl.mode}}</h1>
 
-      설명: <textarea name="description" rows=10 cols=80 required maxlength="512" ng-model="puppy.description">{{puppy.description}}</textarea><br><br>
+    <div ng-show="ctrl.mode.length">
+      <form name="editform">
+        <span ng-class="editform.breed.$valid ? 'non' : 'bg-danger'">
+        견종:
+        </span>
+        <input type="text" name="breed" maxlength="20" required value="{{ctrl.puppy.breed}}" ng-model="ctrl.puppy.breed" ><br><br>
 
-      이미지: <input type="text" name="image" value="{{puppy.image}}" ng-model="puppy.image"><br><br>
+        <span ng-class="editform.description.$valid ? 'non' : 'bg-danger'">
+        설명:
+        </span>
+        <textarea name="description" rows="10" cols="80" required maxlength="512" ng-model="ctrl.puppy.description">{{ctrl.puppy.description}}</textarea><br><br>
 
-      털빠짐 유무:
-      <select ng-model="puppy.isUserAllergic.allergic">
-        <option ng-repeat="a in allergic" value="{{a[0]}}">
-          {{a[1]}}
-        </option>
-      </select>
+        <span ng-class="editform.image.$valid ? 'non' : 'bg-danger'">
+        이미지: 
+        </span>
+        <input type="text" name="image" value="{{ctrl.puppy.image}}" ng-model="ctrl.puppy.image" required><br><br>
 
-      집 지키미:
-      <select ng-model="puppy.isUserAbsent.absent">
-        <option ng-repeat="a in absent" value="{{a[0]}}">
-          {{a[1]}}
-        </option>
-      </select>
+        <span ng-class="editform.alergic.$valid ? 'non' : 'bg-danger'">
+        털빠짐 유무:
+        </span>
+        <select name="alergic" ng-model="ctrl.puppy.isUserAllergic.allergic" required>
+          <option ng-repeat="a in ctrl.allergic" value="{{a[0]}}">
+            {{a[1]}}
+          </option>
+        </select>
 
-      개 활동성:
-      <select ng-model="puppy.isUserActive.active">
-        <option ng-repeat="a in active" value="{{a[0]}}">
-          {{a[1]}}
-        </option>
-      </select>
+        <span ng-class="editform.absent.$valid ? 'non' : 'bg-danger'">
+        집 지키미:
+        </span>
+        <select name="absent" ng-model="ctrl.puppy.isUserAbsent.absent" required>
+          <option ng-repeat="a in ctrl.absent" value="{{a[0]}}">
+            {{a[1]}}
+          </option>
+        </select>
 
-      개 독립성:
-      <select ng-model="puppy.isUserSingle.single">
-        <option ng-repeat="s in single" value="{{s[0]}}">
-          {{s[1]}}
-        </option>
-      </select>
-      <br><br>
+        <span ng-class="editform.active.$valid ? 'non' : 'bg-danger'">
+        개 활동성:
+        </span>
+        <select name="active" ng-model="ctrl.puppy.isUserActive.active" required>
+          <option ng-repeat="a in ctrl.active" value="{{a[0]}}">
+            {{a[1]}}
+          </option>
+        </select>
 
-      개 친화력:
-      <select ng-model="puppy.isPuppyFriendly.friendly">
-        <option ng-repeat="f in friendly" value="{{f[0]}}">
-          {{f[1]}}
-        </option>
-      </select>
+        <span ng-class="editform.single.$valid ? 'non' : 'bg-danger'">
+        개 독립성:
+        </span>
+        <select name="single" ng-model="ctrl.puppy.isUserSingle.single" required>
+          <option ng-repeat="s in ctrl.single" value="{{s[0]}}">
+            {{s[1]}}
+          </option>
+        </select>
+        <br><br>
 
-      개 사육 장소:
-      <select ng-model="puppy.isPuppyInside.inside">
-        <option ng-repeat="i in inside" value="{{i[0]}}">
-          {{i[1]}}
-        </option>
-      </select>
+        <span ng-class="editform.friendly.$valid ? 'non' : 'bg-danger'">
+        개 친화력:
+        </span>
+        <select name="friendly" ng-model="ctrl.puppy.isPuppyFriendly.friendly" required>
+          <option ng-repeat="f in ctrl.friendly" value="{{f[0]}}">
+            {{f[1]}}
+          </option>
+        </select>
 
-      최대가격대(만원):
-      <input type="number" ng-model="puppy.initialCost.cost" value="{{puppy.initialCost.cost}}">
-      <br><br>
+        <span ng-class="editform.inside.$valid ? 'non' : 'bg-danger'">
+        개 사육 장소:
+        </span>
+        <select name="inside" ng-model="ctrl.puppy.isPuppyInside.inside" required>
+          <option ng-repeat="i in ctrl.inside" value="{{i[0]}}">
+            {{i[1]}}
+          </option>
+        </select>
+        <br><br>
 
-      최대양육비용(만원):
-      <input type="number" ng-model="puppy.maintenance.cost" value="{{puppy.maintenace.cost}}">
-      <br><br>
+        <span ng-class="editform.maxinitial.$valid ? 'non' : 'bg-danger'">
+        최대가격대(만원):
+        </span>
+        <input type="number" name="maxinitial" ng-min="10" ng-max="150" ng-maxlength="3" ng-model="ctrl.puppy.initialCost.cost" value="{{ctrl.puppy.initialCost.cost}}" required>
+        <span class="text-danger" ng-hide="editform.maxinitial.$valid">10~150 사이의 값을 입력하세요</span>
+        <br>
+
+        <span ng-class="editform.maxmaint.$valid ? 'non' : 'bg-danger'">
+        최대양육비용(만원):
+        </span>
+        <input type="number" name="maxmaint" ng-min="5" ng-max="30" ng-maxlength="3" ng-model="ctrl.puppy.maintenance.cost" value="{{ctrl.puppy.maintenace.cost}}" required>
+        <span class="text-danger" ng-hide="editform.maxmaint.$valid">5~30 사이의 값을 입력하세요</span>
+        <br>
+        <br>
+
+        <button ng-click="ctrl.submit(ctrl.puppy)" ng-disabled="!editform.$valid" class="btn btn-primary btn-block">
+          {{ctrl.mode}} 완료하기
+        </button>
+      </form>
     </div>
 
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>
-            견종
-          </th>
-          <th>
-            고객 선호도
-          </th>
-          <th>
-            <button ng-click="new()" class="btn btn-success pull-right">
-              <span class="glyphicon glyphicon-plus-sign"></span>
-            </button>
-            <button ng-click="update(puppy)" class="btn btn-primary pull-right">
-              <span class="glyphicon glyphicon-ok"></span>
-            </button>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr ng-repeat="puppy in puppies">
-          <td>{{puppy.breed}}</td>
-          <td>{{puppy.num_selected}}</td>
-          <td>
-            <button ng-click="select(puppy.breed)" class="btn btn-warning pull-right">
-              <span class="glyphicon glyphicon-pencil"></span>
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div ng-hide="ctrl.mode.length">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>
+              견종
+            </th>
+            <th>
+              고객 선호도
+            </th>
+            <th>
+              <button ng-click="ctrl.new()" class="btn btn-success pull-right">
+                <span class="glyphicon glyphicon-plus-sign"></span>
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="puppy in ctrl.puppies">
+            <td>{{puppy.breed}}</td>
+            <td>{{puppy.num_selected}}</td>
+            <td>
+              <button ng-click="ctrl.remove(puppy.breed)" class="btn btn-danger pull-right">
+                <span class="glyphicon glyphicon-remove"></span>
+              </button>
+              <button ng-click="ctrl.select(puppy.breed)" class="btn btn-warning pull-right">
+                <span class="glyphicon glyphicon-pencil"></span>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
   </div>
 
