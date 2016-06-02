@@ -8,25 +8,14 @@ module.exports = {
     filename: 'bundle.js'
   },
 
-<<<<<<< HEAD
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
-        warnings: false,
-        join_vars: true
-      },
-    })
-  ],
-=======
-/*  plugins: [*/
-    //new webpack.optimize.UglifyJsPlugin({
-      //compressor: {
-        //warnings: false,
-        //join_vars: true
-      //},
-    //})
-  //],
->>>>>>> refactor/make-routes-module
+  // plugins: [
+  //   new webpack.optimize.UglifyJsPlugin({
+  //     compressor: {
+  //       warnings: false,
+  //       join_vars: true
+  //     },
+  //   })
+  // ],
 
   module: {
     loaders: [{
