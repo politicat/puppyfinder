@@ -1,12 +1,11 @@
-var mongoose = require('mongoose');
-var db = 'mongodb://localhost/puppy';
-var Puppy = require('../db/Puppy.model');
-var setWeight = require('./helpers').setWeight;
+import mongoose from 'mongoose';
+import Puppy from '../puppy/puppyModel';
+import {setWeight} from './helpers';
 
+var db = 'mongodb://localhost/puppy';
 
 /* Drop collection and add insert new puppy documents into local DB */
 module.exports = function(){
-
     // Connects mongo DB
     mongoose.connect(db);
 
@@ -35,7 +34,7 @@ module.exports = function(){
       if (err) {
         console.error("error saving new puppy");
       } else {
-        console.log("puppy created: ", puppy);
+        //console.log("puppy created: ", puppy);
       }
     });
 
@@ -59,7 +58,7 @@ module.exports = function(){
       if (err) {
         console.error("error saving new puppy");
       } else {
-        console.log("puppy created: ", puppy);
+        //console.log("puppy created: ", puppy);
       }
     });
 
@@ -83,7 +82,7 @@ module.exports = function(){
       if (err) {
         console.error("error saving new puppy");
       } else {
-        console.log("puppy created: ", puppy);
+        //console.log("puppy created: ", puppy);
       }
     });
 
@@ -107,7 +106,7 @@ module.exports = function(){
       if (err) {
         console.error("error saving new puppy");
       } else {
-        console.log("puppy created: ", puppy);
+        //console.log("puppy created: ", puppy);
       }
     });
 
@@ -131,7 +130,7 @@ module.exports = function(){
       if (err) {
         console.error("error saving new puppy");
       } else {
-        console.log("puppy created: ", puppy);
+        //console.log("puppy created: ", puppy);
       }
     });
 
@@ -155,7 +154,7 @@ module.exports = function(){
       if (err) {
         console.error("error saving new puppy");
       } else {
-        console.log("puppy created: ", puppy);
+        //console.log("puppy created: ", puppy);
       }
     });
 
@@ -179,7 +178,7 @@ module.exports = function(){
       if (err) {
         console.error("error saving new puppy");
       } else {
-        console.log("puppy created: ", puppy);
+        //console.log("puppy created: ", puppy);
       }
     });
 };
