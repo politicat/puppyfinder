@@ -1,5 +1,9 @@
-node_modules/
-client/lib
-.DS_Store
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directory
+node_modules
 build/
-public/
+client/bundle.js
