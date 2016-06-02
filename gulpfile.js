@@ -9,7 +9,7 @@ const nodemon = require('gulp-nodemon');
 
 const paths = {
   server: ['server/**/*.js'],
-  client: ['client/**/*.js', 'client/styles/*.css']
+  client: ['client/**/*.js', 'client/styles/*.css', '!client/bundle.js']
 };
 
 gulp.task('eslint', () =>
