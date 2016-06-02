@@ -28,6 +28,8 @@
     </button>
 
     <h1 style="text-align: center">관리자 페이지 {{ctrl.mode}}</h1>
+    <h3 ng-show="ctrl.successMsg.length" class="bg-success" style="text-align: center;">{{ctrl.successMsg}}</h3>
+
 
     <div ng-show="ctrl.mode.length">
       <form name="editform">
@@ -42,7 +44,7 @@
         <textarea name="description" rows="10" cols="80" required maxlength="512" ng-model="ctrl.puppy.description">{{ctrl.puppy.description}}</textarea><br><br>
 
         <span ng-class="editform.image.$valid ? 'non' : 'bg-danger'">
-        이미지: 
+        이미지:
         </span>
         <input type="text" name="image" value="{{ctrl.puppy.image}}" ng-model="ctrl.puppy.image" required><br><br>
 
