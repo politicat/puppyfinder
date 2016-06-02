@@ -215,7 +215,7 @@ angular
           value: 30,
           text: "30 만원"
         }, ]
-      };
+      }
     };
 
     for (var question in question_list) {
