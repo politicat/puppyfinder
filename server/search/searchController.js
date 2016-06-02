@@ -2,8 +2,6 @@ import url from 'url';
 
 import Puppy from '../puppy/puppyModel';
 
-import {calculateTotalWeight, setWeight, sortArray} from '../config/helpers.js';
-
 var api = {
   // TODO query를 req.body로 보내기
   /* SEARCH and RETURN three matching puppies */
@@ -11,36 +9,51 @@ var api = {
     var url_parts = url.parse(req.url, true);
     var query = url_parts.query;
 
-    var puppy = new Puppy();
-
-    puppy.isUserAllergic.allergic = query.allergic;
-    puppy.isUserAbsent.absent = query.absent;
-    puppy.isUserActive.active = query.active;
-    puppy.isUserSingle.single = query.single;
-    puppy.isPuppyFriendly.friendly = query.friendly;
-    puppy.isPuppyInside.inside = query.inside;
-    puppy.initialCost.cost = "" + query.initialCost;
-    puppy.maintenance.cost = "" + query.maintenance;
-    puppy.total_weight = setWeight(puppy);
-
-    console.log("/search >>>>>>>>>>>>>>>>>>>>>>>>> Receieved req: ", query);
-    console.log("user data's total weight: ", puppy.total_weight);
-
-    var array;
+    console.log("/search Receieved req: ", query);
 
     Puppy.find()
     .exec(function(err, puppies) {
         if (err) res.send('cannot retrieve data from DB');
         else {
-          array = puppies;
-          var sorted = sortArray(puppy.total_weight, array);
-          var matched = sorted.slice(0, 3);
+          let resultWeighted= [];
+          puppies.forEach(function(val, i) {
+            let weight = 0;
 
-          // Increase num_selected for each matching puppy
-          for (var i = 0 ; i < 3; i++) {
-            var matchedPuppy = matched[i];
-            matchedPuppy.num_selected++;
-            matchedPuppy.save();
+            if (val.isUserAllergic.allergic === query.allergic) {
+              weight += 10;
+            }
+            if (val.isUserAbsent.absent === query.absent) {
+              weight += 10;
+            }
+            if (val.isUserActive.active === query.active) {
+              weight += 10;
+            }
+            if (val.isUserSingle.single === query.single) {
+              weight += 10;
+            }
+            if (query.friendly === 'default' || val.isPuppyFriendly.friendly === query.friendly) {
+              weight += 10;
+            }
+            if (val.isPuppyInside.inside === query.inside) {
+              weight += 10;
+            }
+            weight += +query.initialCost - val.initialCost.cost;
+            weight += +query.maintenance - val.maintenance.cost;
+
+            resultWeighted.push([i, weight]);
+          });
+
+          resultWeighted = resultWeighted.sort(function(a, b) {
+            return b[1]-a[1];
+          });
+
+          let matched = resultWeighted.slice(0, 3).map(function(val) {
+            return puppies[val[0]];
+          });
+
+          for (var i=0; i<matched.length; i++) {
+            let val = matched[i];
+            console.log(val.isUserAbsent, val.isUserActive, val.isUserAllergic, val.isPuppyFriendly, val.initialCost.cost, val.isPuppyInside, val.maintenance.cost, val.isUserSingle);
           }
 
           res.send(matched);
