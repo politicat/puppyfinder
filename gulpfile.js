@@ -42,7 +42,7 @@ gulp.task('watch', () => {
 
 gulp.task('start', () =>
   nodemon({
-    script: 'server/server.js',
+    script: 'build/server.js',
     watch: ['build/**/*'],
     env: {
       'NODE_ENV': 'development'
