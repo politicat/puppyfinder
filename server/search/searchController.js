@@ -37,8 +37,14 @@ var api = {
             if (val.isPuppyInside.inside === query.inside) {
               weight += 10;
             }
-            weight += +query.initialCost - val.initialCost.cost;
-            weight += +query.maintenance - val.maintenance.cost;
+
+            // 앞: 유저가 설문한 값, 뒤: 강아지 실제 비용
+            if(+query.initialCost - val.initialCost.cost) {
+              weight += 10;
+            }
+            if (+query.maintenance - val.maintenance.cost) {
+              weight += 10;
+            }
 
             resultWeighted.push([i, weight]);
           });
