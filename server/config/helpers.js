@@ -261,15 +261,15 @@ exports.setWeight = function(puppy) {
       break;
   }
 
-    console.log("puppy.isUserAllergic.weight: ", puppy.isUserAllergic.weight);
-    console.log("puppy.isUserAbsent.weight: ", puppy.isUserAbsent.weight);
-    console.log("puppy.isUserActive.weight: ", puppy.isUserActive.weight);
-    console.log("puppy.isUserSingle.weight: ", puppy.isUserSingle.weight);
-    console.log("puppy.isPuppyFriendly.weight:  ", puppy.isPuppyFriendly.weight);
-    console.log("puppy.isPuppyInside.weight: ", puppy.isPuppyInside.weight);
-    console.log("puppy.initialCost.weight: ", puppy.initialCost.weight);
-    console.log("puppy.initialCost.cost: ", puppy.initialCost.cost);
-    console.log("puppy.maintenance.weight: ", puppy.maintenance.weight);
+/*    console.log("puppy.isUserAllergic.weight: ", puppy.isUserAllergic.weight);*/
+    //console.log("puppy.isUserAbsent.weight: ", puppy.isUserAbsent.weight);
+    //console.log("puppy.isUserActive.weight: ", puppy.isUserActive.weight);
+    //console.log("puppy.isUserSingle.weight: ", puppy.isUserSingle.weight);
+    //console.log("puppy.isPuppyFriendly.weight:  ", puppy.isPuppyFriendly.weight);
+    //console.log("puppy.isPuppyInside.weight: ", puppy.isPuppyInside.weight);
+    //console.log("puppy.initialCost.weight: ", puppy.initialCost.weight);
+    //console.log("puppy.initialCost.cost: ", puppy.initialCost.cost);
+    //console.log("puppy.maintenance.weight: ", puppy.maintenance.weight);
 
   // Return total sum
   return puppy.isUserAllergic.weight +

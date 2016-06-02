@@ -9,12 +9,14 @@ const nodemon = require('gulp-nodemon');
 
 const paths = {
   server: ['server/**/*.js'],
-  client: ['client/**/*.js', 'client/styles/*.css']
+  client: ['client/**/*.js', 'client/styles/*.css', '!client/bundle.js']
 };
 
 gulp.task('eslint', () =>
-  gulp.src([paths.server[0], paths.client[0], '!node_modules/**', '!client/lib/**'])
-  .pipe(eslint())
+  gulp.src([paths.server[0], paths.client[0], '!node_modules/**'])
+  .pipe(eslint({
+      "parser": "babel-eslint"
+    }))
   .pipe(eslint.format())
   .pipe(eslint.failAfterError())
 );
@@ -42,7 +44,7 @@ gulp.task('watch', () => {
 
 gulp.task('start', () =>
   nodemon({
-    script: 'server/server.js',
+    script: 'build/server.js',
     watch: ['build/**/*'],
     env: {
       'NODE_ENV': 'development'

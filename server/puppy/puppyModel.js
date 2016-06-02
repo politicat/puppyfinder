@@ -1,4 +1,4 @@
-var mongoose = require('mongoose');
+import mongoose from 'mongoose';
 var Schema = mongoose.Schema;
 
 var PuppySchema = new Schema({
@@ -59,4 +59,4 @@ var PuppySchema = new Schema({
   collection: 'puppies'
 });
 
-module.exports = mongoose.model('Puppy', PuppySchema);
+export default mongoose.model('Puppy', PuppySchema);
