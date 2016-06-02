@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
 import Puppy from '../puppy/puppyModel';
-import {setWeight} from './helpers';
 
 var db = 'mongodb://localhost/puppy';
 
@@ -28,7 +27,6 @@ module.exports = function(){
     puppy.isPuppyInside.inside = "true";
     puppy.initialCost.cost = "50";
     puppy.maintenance.cost = "10";
-    puppy.total_weight = setWeight(puppy);
 
     puppy.save(function(err, puppy) {
       if (err) {
@@ -44,7 +42,7 @@ module.exports = function(){
     puppy.breed = "오스트레일리안 테리어";
     puppy.description = "두 마리의 오스트레일리아 테리어 견종의 역사는 서로 밀접하게 연관되어 있다. 오스트레일리안 테리어와 실키 테리어는 둘 다 오스트레일리아인들이 다양한 영국의 테리어종을 이용해 19세기에 개량한 견종들이다. 기록을 살펴보면, 이 견종의 조상은 이주민들과 함께 오스트레일리아로 건너간 스코틀랜드와 북잉글랜드의 테리어종들에게서 시작되었다. 뻣뻣한 털과 짧은 다리를 가진 스코티(Scottie) 또는 케언(Cairn)와 함께 털이 많고 몸길이를 길게 하는 동시에 다리가 짧은 유전인자를 강화시킴으로써 변종되어 갔다. 그 이후에 나타난 변종들은 댄디(Dandie)의관모와 요키(Yorkie)의 바랜 듯한 푸른색 털 그리고 작은 몸 크기를 가지게 되었다";
     puppy.image = 'AT.png';
-    puppy.isUserAllergic.allergic = "fase";
+    puppy.isUserAllergic.allergic = "false";
     puppy.isUserAbsent.absent = "false";
     puppy.isUserActive.active = "true";
     puppy.isUserSingle.single = "false";
@@ -52,7 +50,6 @@ module.exports = function(){
     puppy.isPuppyInside.inside = "true";
     puppy.initialCost.cost = "150";
     puppy.maintenance.cost = "20";
-    puppy.total_weight = setWeight(puppy);
 
     puppy.save(function(err, puppy) {
       if (err) {
@@ -76,7 +73,6 @@ module.exports = function(){
     puppy.isPuppyInside.inside = "true";
     puppy.initialCost.cost = "30";
     puppy.maintenance.cost = "25";
-    puppy.total_weight = setWeight(puppy);
 
     puppy.save(function(err, puppy) {
       if (err) {
@@ -100,7 +96,6 @@ module.exports = function(){
     puppy.isPuppyInside.inside = "true";
     puppy.initialCost.cost = "20";
     puppy.maintenance.cost = "20";
-    puppy.total_weight = setWeight(puppy);
 
     puppy.save(function(err, puppy) {
       if (err) {
@@ -124,7 +119,6 @@ module.exports = function(){
     puppy.isPuppyInside.inside = "false";
     puppy.initialCost.cost = "100";
     puppy.maintenance.cost = "15";
-    puppy.total_weight = setWeight(puppy);
 
     puppy.save(function(err, puppy) {
       if (err) {
@@ -148,7 +142,6 @@ module.exports = function(){
     puppy.isPuppyInside.inside = "false";
     puppy.initialCost.cost = "30";
     puppy.maintenance.cost = "10";
-    puppy.total_weight = setWeight(puppy);
 
     puppy.save(function(err, puppy) {
       if (err) {
@@ -172,7 +165,6 @@ module.exports = function(){
     puppy.isPuppyInside.inside = "false";
     puppy.initialCost.cost = "150";
     puppy.maintenance.cost = "15";
-    puppy.total_weight = setWeight(puppy);
 
     puppy.save(function(err, puppy) {
       if (err) {

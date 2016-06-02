@@ -1,7 +1,5 @@
 import Puppy from '../puppy/puppyModel';
 
-import {setWeight} from '../config/helpers';
-
 var api = {
   /* GET all puppies in DB */
   getPuppies: function(req, res) {
@@ -72,7 +70,6 @@ var api = {
       puppy.isPuppyInside.inside = req.body.isPuppyInside.inside;
       puppy.initialCost.cost = req.body.initialCost.cost;
       puppy.maintenance.cost = req.body.maintenance.cost;
-      puppy.total_weight = setWeight(puppy);
 
       puppy.save(function(err, puppy) {
         if (err) {
