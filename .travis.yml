@@ -7,11 +7,8 @@ node_js:
 
 # Test script options
 before_script:
-  - npm install -g gulp
-  - npm install -g bower
-  - npm install -g express
-  - bower install --force
-# script: gulp
+  # - npm install -g gulp
+script: gulp
 
 # Notify CI results
 notifications:
