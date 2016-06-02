@@ -120,6 +120,9 @@ TBD
 
 Contributors may send PULL REQUESTS to this repo.
 
+### StyleGuide
+* [JohnPapa`s angular-styleguide] [angular-styleguide]
+
 ## License
 
 TBD
@@ -127,3 +130,6 @@ TBD
 ## License
 
 TBD
+
+
+  [angular-styleguide]: <https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md>
