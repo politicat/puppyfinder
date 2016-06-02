@@ -16,6 +16,9 @@ app.controller("DbmanageController", function($scope, $http) {
     });
 
 
+  $scope.new = function() {
+
+  }
   $scope.select = function(breed) {
     $http.get("/puppies/" + breed)
       .success(function(response) {
