@@ -8,14 +8,14 @@ module.exports = {
     filename: 'bundle.js'
   },
 
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
-        warnings: false,
-        join_vars: true
-      },
-    })
-  ],
+/*  plugins: [*/
+    //new webpack.optimize.UglifyJsPlugin({
+      //compressor: {
+        //warnings: false,
+        //join_vars: true
+      //},
+    //})
+  //],
 
   module: {
     loaders: [{

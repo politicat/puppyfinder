@@ -13,8 +13,10 @@ const paths = {
 };
 
 gulp.task('eslint', () =>
-  gulp.src([paths.server[0], paths.client[0], '!node_modules/**', '!client/lib/**'])
-  .pipe(eslint())
+  gulp.src([paths.server[0], paths.client[0], '!node_modules/**'])
+  .pipe(eslint({
+      "parser": "babel-eslint"
+    }))
   .pipe(eslint.format())
   .pipe(eslint.failAfterError())
 );
