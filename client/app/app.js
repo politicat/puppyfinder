@@ -1,4 +1,5 @@
 import 'normalize-css';
+import '../../node_modules/angular-material/angular-material.css'
 import '../styles/SpoqaHanSans.css';
 import '../styles/style.css';
 
