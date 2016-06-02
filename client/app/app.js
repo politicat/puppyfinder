@@ -1,11 +1,30 @@
+import 'normalize-css';
+import '../../node_modules/angular-material/angular-material.css'
+import '../styles/SpoqaHanSans.css';
+import '../styles/style.css';
+
+import angular from 'angular';
+import 'angular-route';
+import 'angular-aria';
+import 'angular-animate';
+import 'angular-material';
+// require('intro/intro.js');
+// require('survey/survey.js');
+// require('result/result.js');
+import './intro/intro';
+import './survey/survey';
+import './result/result';
+
+
+
 angular.module('puppyfinder', [
   'puppyfinder.intro',
   'puppyfinder.survey',
   'puppyfinder.result',
   'ngRoute',
-  'ngMaterial',
+  'ngMaterial'
 ])
-.config(function ($routeProvider, $httpProvider) {
+.config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
   $routeProvider
     .when('/', {
       templateUrl: 'app/intro/intro.html',
@@ -24,13 +43,13 @@ angular.module('puppyfinder', [
       controller: 'ResultController'
     })
     .otherwise('/intro');
-})
+}])
 
 // TODO $window 대신 다른 것 사용하기
-.controller('AppController', function($window){
+.controller('AppController', ['$window', function($window){
   /* A container for results in window scope to use in multiple apps(servey.js, result.js) */
   $window.results = [];
-})
+}])
 
 // TODO factory 대신 DB에서 불러오기
 .factory('QuestionList', function() {
@@ -157,7 +176,7 @@ angular.module('puppyfinder', [
 })
 
 /* Methods to get related contents in result.html */
-.factory('RelatedContents', function($http){
+.factory('RelatedContents', ['$http', function($http){
   /* Get video list json related to the breed in result from Youtube */
   var getYoutube = function(query){
     return $http({
@@ -221,10 +240,10 @@ angular.module('puppyfinder', [
     getYoutube: getYoutube,
     getDaum: getDaum,
   });
-})
+}])
 
 /* Method to request for a survey result */
-.factory('Result', function($http){
+.factory('Result', ['$http', function($http){
   var getResults = function(data){
     return $http({
       method: 'GET',
@@ -243,4 +262,4 @@ angular.module('puppyfinder', [
   return({
     getResults: getResults,
   });
-});
+}]);
