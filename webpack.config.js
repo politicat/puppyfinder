@@ -23,14 +23,12 @@ module.exports = {
       loader: 'babel',
       exclude: /node_modules/,
       query: {
-      cacheDirectory: true,
-      presets: ['es2015', 'angular']
+        cacheDirectory: true,
+        presets: ['es2015', 'angular']
       }
-    },
-      {
-        test: /\.css$/,
-        loader: 'style!css'
-      }
-    ]
+    }, {
+      test: /\.css$/,
+      loader: 'style!css'
+    }]
   }
 };
