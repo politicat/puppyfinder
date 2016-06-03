@@ -51,25 +51,38 @@ function dbManagerController($http, $window, $timeout) {
   function update(puppy) {
     $http.put("/puppies/" + _this.puppy._id, puppy)
       .success((response) => {
-        console.log("Updated puppy: ", response);
-        _this.puppies = response;
-        _this.mode = "";
-        _this.goback = gobackToAdmin;
-        _this.successMsg = "업데이트 성공";
-        delSuccessMsg(1500);
+        if (typeof(response) !== 'string') {
+          console.log("Updated puppy: ", response);
+          _this.puppies = response;
+          _this.mode = "";
+          _this.goback = gobackToAdmin;
+          _this.successMsg = "업데이트 성공";
+          delSuccessMsg(1500);
+        } else {
+          console.log("error: ", response);
+          _this.successMsg = "견종 중복: 견종명을 바꿔주세요";
+          reloadPage();
+        }
       });
   }
 
   function add(puppy) {
     $http.post("/result", puppy)
       .success((response) => {
-        console.log("Just added: ", response);
-        _this.puppy = undefined;
-        _this.mode = "";
-        _this.goback = gobackToAdmin;
-        _this.successMsg = "추가 성공";
-        delSuccessMsg(1500);
-        reloadPage();
+        if (response.breed !== undefined) {
+          console.log("Just added: ", response);
+          _this.puppy = undefined;
+          _this.mode = "";
+          _this.goback = gobackToAdmin;
+          _this.successMsg = "추가 성공";
+          delSuccessMsg(1500);
+          reloadPage();
+        } else {
+          console.log("error: ", response);
+          _this.successMsg = "견종 중복: 견종명을 바꿔주세요";
+          reloadPage();
+        }
+
       });
   }
 
@@ -85,6 +98,7 @@ function dbManagerController($http, $window, $timeout) {
 
   function gobackToList() {
     _this.mode = "";
+    _this.successMsg = "";
     _this.goback = gobackToAdmin;
   }
 

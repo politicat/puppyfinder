@@ -59,6 +59,7 @@ var api = {
       }
 
       // TODO body에 object 변수로 보내고 받기
+      var breedOrigin = puppy.breed;
       puppy.breed = req.body.breed;
       puppy.description = req.body.description;
       puppy.image = req.body.image;
@@ -70,22 +71,29 @@ var api = {
       puppy.isPuppyInside.inside = req.body.isPuppyInside.inside;
       puppy.initialCost.cost = req.body.initialCost.cost;
       puppy.maintenance.cost = req.body.maintenance.cost;
-
-      puppy.save(function(err, puppy) {
-        if (err) {
-          console.log("Cannot save", puppy);
+      Puppy.findOne({$and: [{breed: puppy.breed}, {_id: {$ne: puppy._id}}]}, function(err, pup) {
+        if (pup === null || pup === undefined) {
+          puppy.save(function(err, puppy) {
+            if (err) {
+              console.log("Cannot save", puppy);
+            } else {
+              console.log('Updated puppy: ', puppy);
+              Puppy.find().sort({ total_weight: -1 })
+                .exec(function(err, ppy) {
+                  if (err) {
+                    res.send('Cannot retrieve data from DB');
+                  } else {
+                    res.send(ppy);
+                  }
+                });
+            }
+          });
         } else {
-          console.log('Updated puppy: ', puppy);
-          Puppy.find().sort({ total_weight: -1 })
-            .exec(function(err, ppy) {
-              if (err) {
-                res.send('Cannot retrieve data from DB');
-              } else {
-                res.send(ppy);
-              }
-            });
+          console.log('error: db has already same dog : ', pup);
+          res.send("db has already the same breed");
         }
       });
+
     });
   }
 };

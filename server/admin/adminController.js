@@ -9,18 +9,6 @@ var api = {
     res.sendFile('dbmanage.html', {root: './server/admin'});
   },
 
-  getUploadPage: function(req, res) {
-    res.sendFile('upload.html', {root: './server/admin'});
-  },
-
-  getUpdatePage: function(req, res) {
-    res.sendFile('update.html', {root: './server/admin'});
-  },
-
-  getRemovePage: function(req, res) {
-    res.sendFile('remove.html', {root: './server/admin'});
-  },
-
   getStatPage: function(req, res) {
     res.sendFile('stat.html', {root: './server/admin'});
   },
@@ -41,12 +29,20 @@ var api = {
     puppy.initialCost.cost = req.body.initialCost.cost;
     puppy.maintenance.cost = req.body.maintenance.cost;
 
-    puppy.save(function(err, puppy) {
-      if (err)  res.send("error saving new puppy");
-      else {
-        res.send(puppy);
+    Puppy.findOne({breed: puppy.breed}, function(err, pup) {
+      if (err) res.send("error finding duplicated puppy whiie saving new puppy");
+      if (pup === null) {
+        puppy.save(function(err, puppy) {
+          if (err)  res.send("error saving new puppy");
+          else {
+            res.send(puppy);
+          }
+        });
+      } else {
+        res.send("error: db has already the same breed");
       }
     });
+
   }
 };
 
