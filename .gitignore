@@ -7,3 +7,6 @@ npm-debug.log*
 node_modules
 build/
 client/bundle.js
+client/*.eot
+client/*.otf
+client/*.woff

@@ -9,7 +9,11 @@ angular
   .module('puppyfinder.survey')
   .controller('SurveyController', ['$window', '$location', '$timeout', 'QuestionList', 'Result', function($window, $location, $timeout, QuestionList, Result) {
     /* Get the question list from the factory and insert into this scope */
-    this.questions = QuestionList.questions;
+    this.questions = QuestionList.questions.map(function(val) {
+      val.content = `${val.subject}\n${val.title}\n${val.content}`;
+      return val;
+    });
+
     /* Container for user's answers to survey */
     this.data = {
       puppyData: {}
@@ -44,8 +48,7 @@ angular
     this.keydowned = false;
     this.running = false;
 
-    this.type = function(txt) {
-      console.log('txt: ', txt);
+    this.type = (txt) => {
       if (!this.running) {
         this.running = true;
         this.i++;
@@ -72,11 +75,32 @@ angular
         typeIt();
     }};
 
-  this.clickBox = function() {
+  this.clickBox = () => {
     if (this.i < this.questions.length) {
-      this.type(this.questions[this.i].title+"");
+      this.type(this.questions[this.i].content+"");
     }
   };
 
-  this.type(this.questions[this.i].title+"");
+  this.keydownBox = (event) => {
+    // use event.keyCode
+    this.speed = 20;
+    if (this.pressed) {
+      this.pressed = false;
+      this.keydowned = false;
+      if (this.i<questions.length) {
+        this.type(questions[i]+"");
+      }
+    } else {
+      this.keydowned = true;
+    }
+  };
+
+  this.keyupBox = (event) => {
+    this.speed = 60;
+    if (this.keydowned) {
+      this.pressed = true;
+    }
+  };
+
+  this.type(this.questions[this.i].content+"");
 }]);

@@ -31,5 +31,8 @@
     <!--</md-virtual-repeat-container>-->
   <!--</form>-->
 <!--</md-content>-->
-<div class='box' ng-class="[hide, {false}]" ng-click="Survey.clickBox()"></div>
-<!--Survey.i < Survey.questions.length-->
+<div class='box' ng-class='{hide: Survey.i >= Survey.questions.length}'
+                 ng-click='Survey.clickBox()'
+                 ng-keydown='Survey.keydownBox($event)'
+                 ng-keyup='Survey.keyup($event)'>
+</div>
