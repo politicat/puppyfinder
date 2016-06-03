@@ -26,9 +26,15 @@ module.exports = {
         cacheDirectory: true,
         presets: ['es2015', 'angular']
       }
-    }, {
+    },
+    {
       test: /\.css$/,
       loader: 'style!css'
-    }]
+    },
+    {
+      test: /\.(otf|eot|woff)$/,
+      loader: 'file'
+    }
+    ]
   }
 };
