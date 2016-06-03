@@ -147,13 +147,11 @@ fieldset {
   font-style: normal;
 }
 
-.box {
+.question-box, .answer-box {
   font-size: 10px;
   font-family: "DungGeunMo", Arial, sans-serif;
   border-radius: 2px;
   padding: 8px;
-  width: 250px;
-  height: 150px;
   line-height: 16px;
   margin: auto;
   background: white;
@@ -162,6 +160,19 @@ fieldset {
               inset 0 1px 0 1px black,
               0 0 0 1px black,
               inset 0 0 0 1px black;
+}
+
+.question-box {
+  width: 250px;
+  height: 150px;
+}
+
+.answer-box {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  right: 80px;
+  top: 150px;
 }
 
 .box.hide {

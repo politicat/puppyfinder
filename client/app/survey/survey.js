@@ -14,14 +14,16 @@ angular
       return val;
     });
 
+    this.question = this.questions[0];
+
     /* Container for user's answers to survey */
     this.data = {
       puppyData: {}
     };
-    /* Default settings for styling */
-    this.topIndex = 0;
-    this.width = window.innerWidth;
-    this.height = window.innerHeight;
+    //[> Default settings for styling <]
+    //this.topIndex = 0;
+    //this.width = window.innerWidth;
+    //this.height = window.innerHeight;
 
     /* Method to send user's answers to the server and get results */
     this.sendQuery = () => {
@@ -36,10 +38,10 @@ angular
         });
     };
 
-    /* Method to move(scroll) to the next question by changing topIndex in the scroll container */
-    this.scrollTo = (index) => {
-      this.topIndex = index;
-    };
+/*    [> Method to move(scroll) to the next question by changing topIndex in the scroll container <]*/
+    //this.scrollTo = (index) => {
+      //this.topIndex = index;
+    //};
 
 
     this.i = 0;
@@ -52,18 +54,19 @@ angular
       if (!this.running) {
         this.running = true;
         this.i++;
+        this.question = this.questions[this.i];
 
         let timeOut;
         let txtLen = txt.length;
         let char = 0;
 
-        angular.element(document.querySelector('.box')).text("");
+        angular.element(document.querySelector('.question-box')).text("");
 
         let typeIt = () => {
           timeOut = $timeout(() => {
             char++;
             let type = txt.substring(0, char);
-            angular.element(document.querySelector('.box')).html(type.replace("\n","<br />"));
+            angular.element(document.querySelector('.question-box')).html(type.replace("\n","<br />"));
             typeIt();
             if (char == txtLen) {
               $timeout.cancel(timeOut);
