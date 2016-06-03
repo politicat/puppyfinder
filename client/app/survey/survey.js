@@ -17,11 +17,6 @@ angular
     /* Container for user's answers to survey */
     this.answers = {};
 
-    /* Default settings for styling */
-    //this.topIndex = 0;
-    //this.width = window.innerWidth;
-    //this.height = window.innerHeight;
-
     /* Method to send user's answers to the server and get results */
     this.sendQuery = () => {
       Result.getResults(this.answers)
