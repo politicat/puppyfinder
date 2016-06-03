@@ -7,7 +7,7 @@ angular
 // result controller
 angular
   .module('puppyfinder.result')
-  .controller('ResultController', ['$window', '$sce', 'RelatedContents', '$timeout', ($window, $sce, RelatedContents, $timeout) => {
+  .controller('ResultController', ['$window', '$sce', 'RelatedContents', '$timeout', function($window, $sce, RelatedContents, $timeout) {
     /* Put results from survey.js in window scope into this scope's results variable */
     this.results = $window.results;
     this.tab = 0;
@@ -29,12 +29,18 @@ angular
             dog.relatedPhotos = photos.data.channel.item;
           });
       });
-
      };
+
+    let loadingBGM = new Audio('../../assets/result-loading.mp3');
+    let loadedBGM = new Audio('../../assets/result-loaded.mp3');
+
+    loadingBGM.play();
 
     this.isLoading = true;
     $timeout(() => {
       this.isLoading = false;
+      loadingBGM.pause();
+      loadedBGM.play();
     }, 3000);
 
     /* Set the tabIndex to see the RelatedContents related breed selected */
@@ -49,4 +55,4 @@ angular
     this.play = (dog, video) => {
       dog.currentVideo = video;
     };
-  }]);
+}]);
