@@ -77,30 +77,33 @@ angular
 
   this.clickBox = () => {
     if (this.i < this.questions.length) {
-      this.type(this.questions[this.i].content+"");
+      this.type(this.questions[this.i].content);
     }
   };
 
   this.keydownBox = (event) => {
-    // use event.keyCode
-    this.speed = 20;
-    if (this.pressed) {
-      this.pressed = false;
-      this.keydowned = false;
-      if (this.i<questions.length) {
-        this.type(questions[i]+"");
+    if (event.keyCode === 65) {
+      this.speed = 20;
+      if (this.pressed) {
+        this.pressed = false;
+        this.keydowned = false;
+        if (this.i < this.questions.length) {
+          this.type(this.questions[this.i].content);
+        }
+      } else {
+        this.keydowned = true;
       }
-    } else {
-      this.keydowned = true;
     }
   };
 
   this.keyupBox = (event) => {
-    this.speed = 60;
-    if (this.keydowned) {
-      this.pressed = true;
+    if (event.keyCode === 65) {
+      this.speed = 60;
+      if (this.keydowned) {
+        this.pressed = true;
+      }
     }
   };
 
-  this.type(this.questions[this.i].content+"");
+  this.type(this.questions[this.i].content);
 }]);
