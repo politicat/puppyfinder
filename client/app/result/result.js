@@ -32,7 +32,11 @@ angular
      };
 
     let loadingBGM = new Audio('../../assets/result-loading.mp3');
-    let loadedBGM = new Audio('../../assets/result-loaded.mp3');
+
+    if (window.bgm) {
+      window.bgm.pause();
+    }
+    window.bgm = new Audio('../../assets/result-loaded.mp3');
 
     loadingBGM.play();
 
@@ -40,8 +44,8 @@ angular
     $timeout(() => {
       this.isLoading = false;
       loadingBGM.pause();
-      loadedBGM.play();
-    }, 3000);
+      window.bgm.play();
+    }, 5000);
 
     /* Set the tabIndex to see the RelatedContents related breed selected */
     this.setTab = (tabIndex) => {

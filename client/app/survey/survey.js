@@ -94,4 +94,15 @@ angular
 
   this.question = this.questions[0];
   this.type(this.question.content);
+
+  if (window.bgm) {
+    window.bgm.pause();
+  }
+
+  window.bgm = new Audio('../../assets/intro-music.mp3');
+  window.bgm.play();
+  window.bgm.addEventListener('ended', () => {
+    window.bgm.currentTime = 0;
+    window.bgm.play();
+  });
 }]);

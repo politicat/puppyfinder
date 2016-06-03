@@ -12,14 +12,18 @@ angular
 
     this.showMsg = false;
 
-    let bgm = new Audio('../../assets/intro-music.mp3');
-    bgm.addEventListener('ended', () => {
-      bgm.currentTime = 0;
-      bgm.play();
+    if (window.bgm) {
+      window.bgm.pause();
+    }
+
+    window.bgm = new Audio('../../assets/intro-music.mp3');
+    window.bgm.addEventListener('ended', () => {
+      window.bgm.currentTime = 0;
+      window.bgm.play();
     });
 
     angular.element(document.querySelector('video'))[0].onended = () => {
-      bgm.play();
+      window.bgm.play();
       $timeout(() => {
         this.showMsg = true;
       }, 0);
