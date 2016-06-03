@@ -6,6 +6,7 @@ import adminController from '../admin/adminController';
 import Puppy from '../puppy/puppyModel';
 import puppyController from '../puppy/puppyController';
 
+import questionController from '../question/questionController';
 import searchController from '../search/searchController';
 
 export default function (app, express) {
@@ -28,6 +29,9 @@ export default function (app, express) {
   app.get('/puppies/:breed', puppyController.getPuppiesByBreed);
   app.delete('/puppies/:breed', puppyController.deletePuppiesByBreed);
   app.put('/puppies/:id', puppyController.updatePuppy);
+
+  // question list 가져오기
+  app.get('/questions', questionController.getAllQuestions);
 
   // TODO query를 req.body로 보내기
   /* SEARCH and RETURN three matching puppies */

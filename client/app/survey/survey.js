@@ -7,9 +7,10 @@ angular
 // survey controller
 angular
   .module('puppyfinder.survey')
-  .controller('SurveyController', ['$window', '$location', 'QuestionList', 'Result', function($window, $location, QuestionList, Result) {
+  .controller('SurveyController', ['$window', '$location', 'Result', function($window, $location, Result) {
     /* Get the question list from the factory and insert into this scope */
-    this.questions = QuestionList.questions;
+    this.questions = $window.questions;
+
     /* Container for user's answers to survey */
     this.data = {
       puppyData: {}
