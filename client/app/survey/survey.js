@@ -15,17 +15,16 @@ angular
     });
 
     /* Container for user's answers to survey */
-    this.data = {
-      puppyData: {}
-    };
-    //[> Default settings for styling <]
+    this.answers = {};
+
+    /* Default settings for styling */
     //this.topIndex = 0;
     //this.width = window.innerWidth;
     //this.height = window.innerHeight;
 
     /* Method to send user's answers to the server and get results */
     this.sendQuery = () => {
-      Result.getResults(this.data.puppyData)
+      Result.getResults(this.answers)
         .then(function(resp) {
           /* Put results in the window scope container set in the AppController  */
           $window.results = resp.data;
@@ -35,12 +34,6 @@ angular
           $location.path('/result');
         });
     };
-
-/*    [> Method to move(scroll) to the next question by changing topIndex in the scroll container <]*/
-    //this.scrollTo = (index) => {
-      //this.topIndex = index;
-    //};
-
 
     this.i = 0;
     this.speed = 60;
@@ -81,6 +74,10 @@ angular
     }
   };
 
+  this.saveAnswer = (answer) => {
+    this.answers[this.question.name] = answer;
+  };
+
   this.keydownBox = (event) => {
     if (event.keyCode === 65) {
       this.speed = 20;
@@ -90,10 +87,13 @@ angular
   this.keyupBox = (event) => {
     if (event.keyCode === 65) {
       this.speed = 60;
-    } else if (event.keyCode === 40 && this.optionIdx < this.question.options.length) {
+    } else if (event.keyCode === 40 && this.optionIdx < this.question.options.length-1) {
       this.optionIdx++;
     } else if (event.keyCode === 38 && this.optionIdx > 0) {
       this.optionIdx--;
+    } else if (event.keyCode === 13) {
+      this.saveAnswer(this.question.options[this.optionIdx].value);
+      this.toNext();
     }
   };
 

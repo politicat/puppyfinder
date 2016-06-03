@@ -32,7 +32,7 @@
 <!--</form>-->
 <!--</md-content>-->
 
-<audio src='/assets/new-bark-town.mp3' autoplay loop></audio>
+<!--<audio src='/assets/new-bark-town.mp3' autoplay loop></audio>-->
 <div class='container' ng-keydown='Survey.keydownBox($event)'
   ng-keyup='Survey.keyupBox($event)'
   tabindex='0'>
@@ -42,9 +42,10 @@
   </div>
   <div class='answer-box' ng-class='{hide: Survey.i === Survey.questions.length}'>
     <div ng-repeat='option in Survey.question.options'
-      ng-click='Survey.toNext()'>
-      <span ng-show='$index === Survey.optionIdx'>▶ </span>
-      <input ng-model="Survey.data.puppyData[Survey.question.name]" name="{{Survey.question.name}}" value="{{option.value}}" ng-required="true">
+      ng-click='Survey.saveAnswer(option.value); Survey.toNext();'
+      ng-keyup='Survey.keyupOption($event, option.value)'>
+      <span ng-show='$index === Survey.optionIdx'>▶&nbsp;</span>
+      <span ng-show='$index !== Survey.optionIdx'>&nbsp;&nbsp;</span>
       <span>{{option.text}}</span>
       <br />
     </div>
