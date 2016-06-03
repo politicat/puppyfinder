@@ -46,6 +46,7 @@ angular
     this.speed = 60;
     this.pressed = false;
     this.keydowned = false;
+    this.optionIdx = 0;
 
     this.type = (txt) => {
       let timeOut;
@@ -69,17 +70,18 @@ angular
       typeIt(this.i);
   };
 
+  let ding = new Audio('../../assets/ding.mp3');
   this.toNext = () => {
     if (this.i < this.questions.length-1) {
       this.question = this.questions[++this.i];
       this.type(this.question.content);
+      ding.play();
     } else if (this.i === this.questions.length-1) {
       this.i++;
     }
   };
 
   this.keydownBox = (event) => {
-    console.log('keydown');
     if (event.keyCode === 65) {
       this.speed = 20;
     }
@@ -88,6 +90,10 @@ angular
   this.keyupBox = (event) => {
     if (event.keyCode === 65) {
       this.speed = 60;
+    } else if (event.keyCode === 40 && this.optionIdx < this.question.options.length) {
+      this.optionIdx++;
+    } else if (event.keyCode === 38 && this.optionIdx > 0) {
+      this.optionIdx--;
     }
   };
 
