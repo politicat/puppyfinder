@@ -120,3 +120,35 @@ fieldset {
 .result-wrapper h1 {
   margin: 0 0 40px 0;
 }
+
+@font-face {
+  font-family: "Pokemon GB";
+  src: url("fonts/DungGeunMo.eot") format("eot"),
+       url("fonts/DungGeunMo.woff") format("woff"),
+       url("fonts/DungGeunMo.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.box {
+  font-size: 8px;
+  font-family: "Pokemon GB", Arial, sans-serif;
+  border-radius: 2px;
+  padding: 8px;
+  width: 250px;
+  height: 100px;
+  line-height: 16px;
+  margin: auto;
+  background: white;
+  border: 1px solid white;
+  box-shadow: 0 1px 0 1px black,
+              inset 0 1px 0 1px black,
+              0 0 0 1px black,
+              inset 0 0 0 1px black;
+}
+
+.box.hide {
+  transition: all .3s;
+  opacity: 0;
+  /*margin-top: 200px;*/
+}
