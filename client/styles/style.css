@@ -168,10 +168,10 @@ fieldset {
 }
 
 .answer-box {
-  width: 200px;
-  height: 100px;
+  width: 180px;
+  height: 120px;
   position: absolute;
-  right: 80px;
+  right: 100px;
   top: 150px;
 }
 

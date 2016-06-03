@@ -10,7 +10,7 @@ angular
   .controller('SurveyController', ['$window', '$location', '$timeout', 'QuestionList', 'Result', function($window, $location, $timeout, QuestionList, Result) {
     /* Get the question list from the factory and insert into this scope */
     this.questions = QuestionList.questions.map(function(val) {
-      val.content = `${val.subject}\n${val.title}\n${val.content}`;
+      val.content = `${val.subject}\n${val.title}\n\n${val.content}`;
       return val;
     });
 
@@ -48,8 +48,6 @@ angular
     this.keydowned = false;
 
     this.type = (txt) => {
-      this.question = this.questions[this.i++];
-
       let timeOut;
       let txtLen = txt.length;
       let character = 0;
@@ -59,8 +57,8 @@ angular
       let typeIt = (i) => {
         timeOut = $timeout(() => {
           character++;
-          let type = txt.substring(0, character);
-          angular.element(document.querySelector('.question-box')).html(type.replace("\n","<br />"));
+          let nowTyping = txt.substring(0, character);
+          angular.element(document.querySelector('.question-box')).html(nowTyping.replace(/\n/gi,"<br />"));
           typeIt(i);
           if (character === txtLen || i !== this.i) {
             $timeout.cancel(timeOut);
@@ -72,8 +70,11 @@ angular
   };
 
   this.toNext = () => {
-    if (this.i < this.questions.length) {
-      this.type(this.questions[this.i].content);
+    if (this.i < this.questions.length-1) {
+      this.question = this.questions[++this.i];
+      this.type(this.question.content);
+    } else if (this.i === this.questions.length-1) {
+      this.i++;
     }
   };
 
@@ -81,26 +82,15 @@ angular
     console.log('keydown');
     if (event.keyCode === 65) {
       this.speed = 20;
-/*      if (this.pressed) {*/
-        //this.pressed = false;
-        //this.keydowned = false;
-        //if (this.i < this.questions.length) {
-          //this.type(this.questions[this.i].content);
-        //}
-      //} else {
-        //this.keydowned = true;
-      /*}*/
     }
   };
 
   this.keyupBox = (event) => {
     if (event.keyCode === 65) {
       this.speed = 60;
-      if (this.keydowned) {
-        this.pressed = true;
-      }
     }
   };
 
-  this.type(this.questions[this.i].content);
+  this.question = this.questions[0];
+  this.type(this.question.content);
 }]);
