@@ -14,6 +14,7 @@ export default function (app, express) {
   // input validation
   // add.js <-> upload.html 파일명 통일하기
   app.get('/admin', adminController.getAdminPage);
+  app.get('/dbmanage', adminController.getDbManagePage);
   app.get('/upload', adminController.getUploadPage);
   app.get('/update', adminController.getUpdatePage);
   app.get('/remove', adminController.getRemovePage);
