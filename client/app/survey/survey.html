@@ -32,18 +32,20 @@
 <!--</form>-->
 <!--</md-content>-->
 
-<div class='container' ng-keydown='Survey.keydownBox($event)'
-                ng-keyup='Survey.keyupBox($event)'
-                ng-click='Survey.clickBox()'>
+<div class='container' ng-keydown='Survey.keydownBox($event)'>
   <div id='screen' ng-style="{'background-image' : 'url(/assets/pokemon.png)'}">
   </div>
   <div class='question-box' ng-class='{hide: Survey.i >= Survey.questions.length}'>
   </div>
-  <div class='answer-box'>
+  <div class='answer-box' ng-class='{hide: Survey.i >= Survey.questions.length}'
+    ng-click='Survey.toNext()'>
     <div ng-repeat='option in Survey.question.options'>
       <input ng-model="Survey.data.puppyData[Survey.question.name]" type="radio" name="{{Survey.question.name}}" value="{{option.value}}" ng-required="true">
       <span>{{option.text}}</span>
       <br />
     </div>
   </div>
+  <div class="submit-box" ng-class='{hide: Survey.i < Survey.questions.length}'
+    ng-click='Survey.sendQuery()'/>
+    <span>결과보기!</span>
 </div>

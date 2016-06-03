@@ -14,8 +14,6 @@ angular
       return val;
     });
 
-    this.question = this.questions[0];
-
     /* Container for user's answers to survey */
     this.data = {
       puppyData: {}
@@ -48,54 +46,50 @@ angular
     this.speed = 60;
     this.pressed = false;
     this.keydowned = false;
-    this.running = false;
 
     this.type = (txt) => {
-      if (!this.running) {
-        this.running = true;
-        this.i++;
-        this.question = this.questions[this.i];
+      this.question = this.questions[this.i++];
 
-        let timeOut;
-        let txtLen = txt.length;
-        let char = 0;
+      let timeOut;
+      let txtLen = txt.length;
+      let character = 0;
 
-        angular.element(document.querySelector('.question-box')).text("");
+      angular.element(document.querySelector('.question-box')).text("");
 
-        let typeIt = () => {
-          timeOut = $timeout(() => {
-            char++;
-            let type = txt.substring(0, char);
-            angular.element(document.querySelector('.question-box')).html(type.replace("\n","<br />"));
-            typeIt();
-            if (char == txtLen) {
-              $timeout.cancel(timeOut);
-              this.running = false;
-            }
-          }, this.speed);
-        };
+      let typeIt = (i) => {
+        timeOut = $timeout(() => {
+          character++;
+          let type = txt.substring(0, character);
+          angular.element(document.querySelector('.question-box')).html(type.replace("\n","<br />"));
+          typeIt(i);
+          if (character === txtLen || i !== this.i) {
+            $timeout.cancel(timeOut);
+          }
+        }, this.speed);
+      };
 
-        typeIt();
-    }};
+      typeIt(this.i);
+  };
 
-  this.clickBox = () => {
+  this.toNext = () => {
     if (this.i < this.questions.length) {
       this.type(this.questions[this.i].content);
     }
   };
 
   this.keydownBox = (event) => {
+    console.log('keydown');
     if (event.keyCode === 65) {
       this.speed = 20;
-      if (this.pressed) {
-        this.pressed = false;
-        this.keydowned = false;
-        if (this.i < this.questions.length) {
-          this.type(this.questions[this.i].content);
-        }
-      } else {
-        this.keydowned = true;
-      }
+/*      if (this.pressed) {*/
+        //this.pressed = false;
+        //this.keydowned = false;
+        //if (this.i < this.questions.length) {
+          //this.type(this.questions[this.i].content);
+        //}
+      //} else {
+        //this.keydowned = true;
+      /*}*/
     }
   };
 
