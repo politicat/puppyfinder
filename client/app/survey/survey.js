@@ -7,9 +7,9 @@ angular
 // survey controller
 angular
   .module('puppyfinder.survey')
-  .controller('SurveyController', ['$window', '$location', '$timeout', 'QuestionList', 'Result', function($window, $location, $timeout, QuestionList, Result) {
+  .controller('SurveyController', ['$window', '$location', '$timeout', 'Result', function($window, $location, $timeout, Result) {
     /* Get the question list from the factory and insert into this scope */
-    this.questions = QuestionList.questions.map(function(val) {
+    this.questions = $window.questions.map(function(val) {
       val.content = `${val.subject}\n${val.title}\n\n${val.content}`;
       return val;
     });

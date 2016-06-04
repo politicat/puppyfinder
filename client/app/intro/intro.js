@@ -4,9 +4,10 @@ import 'angular';
 angular
   .module('puppyfinder.intro', []);
 
+// intro controller
 angular
   .module('puppyfinder.intro')
-  .controller('IntroController', ['$timeout', function($timeout) {
+  .controller('IntroController', ['$window', '$location', '$timeout', 'QuestionList', function($window, $location, $timeout, QuestionList) {
     this.width = window.innerWidth;
     this.height = window.innerHeight;
 
@@ -28,4 +29,15 @@ angular
         this.showMsg = true;
       }, 0);
     };
-}]);
+
+    this.sendQuery = function() {
+      QuestionList.getQuestions()
+      .then(function(resp) {
+        $window.questions = resp.data;
+        return "success";
+      })
+      .then(function() {
+        $location.path('/survey');
+      });
+    }
+  }]);
