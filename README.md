@@ -1,4 +1,4 @@
-<!-- 빌드 통과 여부, 차후 수정 --> [![Build Status](https://travis-ci.org/NoahLuftYang/puppyfinder.svg?branch=feat%2Ftravis)](https://travis-ci.org/NoahLuftYang/puppyfinder) [![Stories in Ready](https://badge.waffle.io/politicat/puppyfinder.png?label=ready&title=Ready)](https://waffle.io/politicat/puppyfinder)
+[![Build Status](https://travis-ci.org/NoahLuftYang/puppyfinder.svg?branch=feat%2Ftravis)](https://travis-ci.org/NoahLuftYang/puppyfinder) [![Stories in Ready](https://badge.waffle.io/politicat/puppyfinder.png?label=ready&title=Ready)](https://waffle.io/politicat/puppyfinder)
 
 # PuppyFinder
 
@@ -19,21 +19,16 @@ People often find it difficult when they try to adopt a puppy for the first time
 Make sure to
 
 ```
-bower install
 npm install
 ```
 
 at the ROOT directory
 
-- Bower deals with all installations related to Front-end
-- NPM manages Back-end installations
-- When bower install, make sure to select 3) (the latest version)
-
 ## How to Run
 
 ```
 mongod
-nodemon server/server.js
+gulp
 ```
 
 104.236.82.140:8888 : Redirects to intro.html (via express static)
