@@ -29,6 +29,12 @@ angular
             dog.relatedPhotos = photos.data.channel.item;
           });
       });
+
+      this.roar = [];
+      this.roarBGM;
+      for (var i = 1; i < 5; i++ ) {
+        this.roar.push('roar' + i + '.mp3');
+      }
      };
 
     let loadingBGM = new Audio('../../assets/result-loading.mp3');
@@ -50,6 +56,9 @@ angular
     /* Set the tabIndex to see the RelatedContents related breed selected */
     this.setTab = (tabIndex) => {
       this.tab = tabIndex;
+      if (this.roarBGM) this.roarBGM.pause();
+      this.roarBGM = new Audio('./assets/' + this.roar[Math.floor(this.roar.length * Math.random())]);
+      this.roarBGM.play();
     };
     /* Confirm that video source can be trusted */
     this.getSrc = (video) => {
