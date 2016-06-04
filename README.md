@@ -1,4 +1,4 @@
-<!-- 빌드 통과 여부, 차후 수정 --> [![Build Status](https://travis-ci.org/NoahLuftYang/puppyfinder.svg?branch=feat%2Ftravis)](https://travis-ci.org/NoahLuftYang/puppyfinder) [![Stories in Ready](https://badge.waffle.io/politicat/puppyfinder.png?label=ready&title=Ready)](https://waffle.io/politicat/puppyfinder)
+[![Build Status](https://travis-ci.org/NoahLuftYang/puppyfinder.svg?branch=feat%2Ftravis)](https://travis-ci.org/NoahLuftYang/puppyfinder) [![Stories in Ready](https://badge.waffle.io/politicat/puppyfinder.png?label=ready&title=Ready)](https://waffle.io/politicat/puppyfinder)
 
 # PuppyFinder
 

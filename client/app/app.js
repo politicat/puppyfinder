@@ -61,8 +61,7 @@ angular
       return $http({
         method: 'GET',
         url: '/questions'
-      })
-      .then((resp) => resp);
+      });
     };
 
     return {
@@ -79,8 +78,7 @@ angular
           method: 'GET',
           url: '/search',
           params: data
-        })
-        .then((resp) => resp);
+        });
     };
 
     return {
@@ -103,8 +101,7 @@ angular
             '&maxResults=' + 12 +
             '&type=' + 'video' +
             '&videoEmbeddable=' + 'true'
-        })
-        .then((resp) => resp.data.items);
+        });
     };
 
     /* Get video list json related to the breed in result from Youtube */
@@ -117,8 +114,7 @@ angular
           method: 'GET',
           url: '/daum',
           params: data
-        })
-        .then((resp) => resp);
+        });
     };
 
     /*

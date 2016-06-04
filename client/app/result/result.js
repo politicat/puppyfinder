@@ -20,7 +20,7 @@ angular
         /* Request related videos to Youtube */
         RelatedContents.getYoutube(q)
           .then((videos) => {
-            dog.relatedVideos = videos;
+            dog.relatedVideos = videos.data.items;
             dog.currentVideo = dog.relatedVideos[0];
           });
         /* Request related photos to Daum Image Search */
