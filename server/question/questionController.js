@@ -5,7 +5,7 @@ let api = {
     Question.find({}, function(err, data) {
       if(err) throw err;
       else {
-        res.send(200, data);
+        res.status(200).send(data);
       }
     })
   }
