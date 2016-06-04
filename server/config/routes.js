@@ -8,6 +8,7 @@ import puppyController from '../puppy/puppyController';
 
 import questionController from '../question/questionController';
 import searchController from '../search/searchController';
+import statController from '../stat/statController';
 
 export default function (app, express) {
   // TODO single page로 합치기
@@ -17,6 +18,7 @@ export default function (app, express) {
   app.get('/admin', adminController.getAdminPage);
   app.get('/dbmanage', adminController.getDbManagePage);
   app.get('/stat', adminController.getStatPage);
+  app.get('/statjson', statController.getStats);
   /*
    * SHOWS the result after admin user INSERTS puppy data via admin page
    * The reason POST is used is that we want to hide parameters at the end of url

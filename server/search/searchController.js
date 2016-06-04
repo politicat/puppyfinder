@@ -2,6 +2,8 @@ import url from 'url';
 
 import Puppy from '../puppy/puppyModel';
 
+import statHelper from '../stat/statHelper';
+
 var api = {
   // TODO query를 req.body로 보내기
   /* SEARCH and RETURN three matching puppies */
@@ -61,6 +63,8 @@ var api = {
             let val = matched[i];
             console.log(val.isUserAbsent, val.isUserActive, val.isUserAllergic, val.isPuppyFriendly, val.initialCost.cost, val.isPuppyInside, val.maintenance.cost, val.isUserSingle);
           }
+
+          statHelper.save(matched);
 
           res.send(matched);
         }
