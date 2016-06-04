@@ -51,7 +51,7 @@ angular
       this.isLoading = false;
       loadingBGM.pause();
       window.bgm.play();
-    }, 1000); // 5000
+    }, 5000);
 
     /* Set the tabIndex to see the RelatedContents related breed selected */
     this.setTab = (tabIndex) => {
