@@ -30,14 +30,7 @@ angular
       }, 0);
     };
 
-    this.sendQuery = () => {
-      QuestionList.getQuestions()
-      .then(function(resp) {
-        $window.questions = resp.data;
-        return "success";
-      })
-      .then(function() {
-        $location.path('/survey');
-      });
-    }
+    this.gotoSurvey = () => {
+      $location.path('/survey');
+    };
   }]);

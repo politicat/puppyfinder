@@ -32,6 +32,7 @@ p.intro {
 }
 li.dog {
   padding: 0 20px 0 0;
+  display: inline-block;
 }
 li.dog:last-child {
   padding: 0;
@@ -206,10 +207,23 @@ fieldset {
   text-align: center;
 }
 
-.result-box a {
+.result-box #goto-survey {
   text-align: center;
   display: block;
   font-size: 20px;
+}
+
+.result-box .option {
+  text-align: initial;
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: -3px;
+  word-spacing: -3px;
+}
+
+.result-box .options {
+  text-align: center;
+  margin-top: 30px;
 }
 
 /*.container.hide {*/
@@ -267,6 +281,11 @@ fieldset {
   z-index: 10;
   box-shadow: 0 0 0 10px black;
   animation: blink .5s alternate 7;
+}
+
+.pokeball-icon {
+  width: 15px;
+  height: 15px;
 }
 /* Animation */
 @keyframes blink {

@@ -7,13 +7,7 @@ angular
 // survey controller
 angular
   .module('puppyfinder.survey')
-  .controller('SurveyController', ['$window', '$location', '$timeout', 'Result', function($window, $location, $timeout, Result) {
-    /* Get the question list from the factory and insert into this scope */
-    this.questions = $window.questions.map(function(val) {
-      val.content = `${val.subject}\n${val.title}\n\n${val.content}`;
-      return val;
-    });
-
+  .controller('SurveyController', ['$window', '$location', '$timeout', 'Result', 'QuestionList', function($window, $location, $timeout, Result, QuestionList) {
     /* Container for user's answers to survey */
     this.answers = {};
 
@@ -96,8 +90,21 @@ angular
     }
   };
 
-  this.question = this.questions[0];
-  this.type(this.question.content);
+  QuestionList.getQuestions()
+  .then(function(resp) {
+    $window.questions = resp.data;
+    return "success";
+  })
+  .then(() => {
+    /* Get the question list from the factory and insert into this scope */
+    this.questions = $window.questions.map(function(val) {
+      val.content = `${val.subject}\n${val.title}\n\n${val.content}`;
+      return val;
+    });
+    this.question = this.questions[0];
+    this.type(this.question.content);
+  })
+
 
   if (window.bgm) {
     window.bgm.pause();

@@ -9,11 +9,11 @@
   <div class="result" ng-init="Result.init()">
       <h1>나에게 꼭 맞는 반려견은?</h1>
       <!-- Tab navigation -->
-      <ul layout="row">
+      <ul class="options" layout="row">
         <li class="dog" ng-repeat="dog in Result.results">
-          <a href ng-click="Result.setTab($index)">
-            <img ng-src="{{dog.image}}" />
-            <h6>{{dog.breed}}</h6>
+          <a href class="option" ng-click="Result.setTab($index)">
+            <img class="pokeball-icon" ng-src="./assets/pokeball.png" />
+            <span>{{dog.breed}}</span>
           </a>
         </li>
       </ul>
@@ -46,7 +46,7 @@
           <!--</md-grid-list>-->
         <!--</div>-->
       </div>
-    <a href="#/survey" role="button">테스트 다시하기</a>
+    <a id="goto-survey" href="#/survey" role="button">테스트 다시하기</a>
   </div>
 </div>
 </div>
