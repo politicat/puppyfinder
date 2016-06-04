@@ -26,6 +26,8 @@
     "bootstrap": "^3.3.6",
     "express": "^4.13.4",
     "mongoose": "^4.4.17",
+    "mongoose-seed": "^0.1.5",
+    "mongoose-seed-plus": "^0.1.2",
     "morgan": "^1.7.0",
     "normalize-css": "^2.3.1",
     "request": "^2.72.0"

@@ -44,19 +44,11 @@ angular
       .otherwise('/intro');
   }]);
 
-// app controller
-// TODO $window 대신 다른 것 사용하기
-angular
-  .module('puppyfinder')
-  .controller('AppController', ['$window', function($window) {
-    /* A container for results in window scope to use in multiple apps(servey.js, result.js) */
-    $window.results = [];
-  }])
-
 // app Survey questions factory
 angular
   .module('puppyfinder')
   .factory('QuestionList', ['$http', function($http) {
+    let questions = [];
     let getQuestions = function() {
       return $http({
         method: 'GET',
@@ -65,6 +57,7 @@ angular
     };
 
     return {
+      questions: questions,
       getQuestions: getQuestions
     };
   }]);
@@ -73,6 +66,7 @@ angular
 angular
   .module('puppyfinder')
   .factory('Result', ['$http', function($http) {
+    let results = [];
     let getResults = function(data) {
       return $http({
           method: 'GET',
@@ -82,6 +76,7 @@ angular
     };
 
     return {
+      results: results,
       getResults: getResults
     };
   }]);

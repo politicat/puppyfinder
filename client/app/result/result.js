@@ -7,9 +7,9 @@ angular
 // result controller
 angular
   .module('puppyfinder.result')
-  .controller('ResultController', ['$window', '$sce', 'RelatedContents', '$timeout', function($window, $sce, RelatedContents, $timeout) {
+  .controller('ResultController', ['$sce', '$timeout', 'Result', 'RelatedContents', function($sce, $timeout, Result, RelatedContents) {
     /* Put results from survey.js in window scope into this scope's results variable */
-    this.results = $window.results;
+    this.results = Result.results;
     this.tab = 0;
 
     /* Initialize method when ResultController is loaded in the DOM */

@@ -8,7 +8,6 @@ const port = 8888;
 
 /* Initialize DB */
 import initDB from './config/init';
-// TODO 매번 db 초기화시킬 필요 없음
 initDB();
 
 middleware(app, express);
