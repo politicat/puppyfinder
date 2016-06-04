@@ -30,7 +30,7 @@ angular
       }, 0);
     };
 
-    this.sendQuery = function() {
+    this.sendQuery = () => {
       QuestionList.getQuestions()
       .then(function(resp) {
         $window.questions = resp.data;
