@@ -80,12 +80,16 @@ angular
   };
 
   this.keyupBox = (event) => {
+    // 'a'
     if (event.keyCode === 65) {
       this.speed = 60;
+      // 밑으로 화살표
     } else if (event.keyCode === 40 && this.optionIdx < this.question.options.length-1) {
       this.optionIdx++;
+      // 위로 화살표
     } else if (event.keyCode === 38 && this.optionIdx > 0) {
       this.optionIdx--;
+      // enter
     } else if (event.keyCode === 13) {
       this.saveAnswer(this.question.options[this.optionIdx].value);
       this.toNext();

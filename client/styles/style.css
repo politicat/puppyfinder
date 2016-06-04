@@ -60,16 +60,16 @@ div.question-wrapper {
 div.in-card {
   width: 640px;
 }
-md-card.question {
-  /*opacity: 0.8;*/
-  width: 740px;
-  height: 480px;
-}
-md-card.tabContent {
-  margin: 50px 0 0 0;
-  width: 740px;
-  padding: 50px;
-}
+/*md-card.question {*/
+  /*[>opacity: 0.8;<]*/
+  /*width: 740px;*/
+  /*height: 480px;*/
+/*}*/
+/*md-card.tabContent {*/
+  /*margin: 50px 0 0 0;*/
+  /*width: 740px;*/
+  /*padding: 50px;*/
+/*}*/
 div.mydog {
   width: 640px;
 }
@@ -86,19 +86,19 @@ header a {
   font-weight: 700;
   color: #E7E7E7;
 }
-.md-raised {
-  margin: 0;
-}
+/*.md-raised {*/
+  /*margin: 0;*/
+/*}*/
 /*.md-raised.intro {*/
   /*width: 270px;*/
   /*height: 46px;*/
 /*}*/
-.md-raised.question {
-  width: 640px;
-  height: 46px;
-  background-color: #009688;
-  color: white;
-}
+/*.md-raised.question {*/
+  /*width: 640px;*/
+  /*height: 46px;*/
+  /*background-color: #009688;*/
+  /*color: white;*/
+/*}*/
 .question-header {
   font-size: 12px;
   padding: 0;
@@ -212,11 +212,12 @@ fieldset {
   font-size: 20px;
 }
 
-.container.hide {
-  transition: all .3s;
-  opacity: 0;
-  /*margin-top: 200px;*/
-}
+/*.container.hide {*/
+  /*display: hidden;*/
+/*[>  transition: all .3s;<]*/
+  /*[>opacity: 0;<]*/
+  /*[>margin-top: 200px;<]*/
+/*}*/
 
 .center-on-page {
   background: #ecf0f1;

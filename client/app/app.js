@@ -1,14 +1,11 @@
 import 'normalize-css';
-import '../../node_modules/angular-material/angular-material.css'
 import '../styles/SpoqaHanSans.css';
 import '../styles/style.css';
-import 'fullpage.js'
 
 import angular from 'angular';
 import 'angular-route';
 import 'angular-aria';
 import 'angular-animate';
-import 'angular-material';
 
 import './intro/intro';
 import './survey/survey';
@@ -20,8 +17,7 @@ angular
     'puppyfinder.intro',
     'puppyfinder.survey',
     'puppyfinder.result',
-    'ngRoute',
-    'ngMaterial'
+    'ngRoute'
   ]);
 
 // app router
