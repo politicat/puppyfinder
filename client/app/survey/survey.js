@@ -7,7 +7,22 @@ angular
 // survey controller
 angular
   .module('puppyfinder.survey')
-  .controller('SurveyController', ['$window', '$location', '$timeout', 'Result', 'QuestionList', function($window, $location, $timeout, Result, QuestionList) {
+  .controller('SurveyController', ['$location', '$timeout', 'QuestionList', 'Result', function($location, $timeout, QuestionList, Result) {
+    QuestionList.getQuestions()
+    .then(function(resp) {
+      QuestionList.questions = resp.data;
+      return "success";
+    })
+    .then(() => {
+      /* Get the question list from the factory and insert into this scope */
+      this.questions = QuestionList.questions.map(function(val) {
+        val.content = `${val.subject}\n${val.title}\n\n${val.content}`;
+        return val;
+      });
+      this.question = this.questions[0];
+      this.type(this.question.content);
+    });
+
     /* Container for user's answers to survey */
     this.answers = {};
 
@@ -16,7 +31,7 @@ angular
       Result.getResults(this.answers)
         .then(function(resp) {
           /* Put results in the window scope container set in the AppController  */
-          $window.results = resp.data;
+          Result.results = resp.data;
           return "success";
         })
         .then(function() {
@@ -89,22 +104,6 @@ angular
       this.toNext();
     }
   };
-
-  QuestionList.getQuestions()
-  .then(function(resp) {
-    $window.questions = resp.data;
-    return "success";
-  })
-  .then(() => {
-    /* Get the question list from the factory and insert into this scope */
-    this.questions = $window.questions.map(function(val) {
-      val.content = `${val.subject}\n${val.title}\n\n${val.content}`;
-      return val;
-    });
-    this.question = this.questions[0];
-    this.type(this.question.content);
-  })
-
 
   if (window.bgm) {
     window.bgm.pause();

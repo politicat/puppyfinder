@@ -7,7 +7,7 @@ angular
 // intro controller
 angular
   .module('puppyfinder.intro')
-  .controller('IntroController', ['$window', '$location', '$timeout', 'QuestionList', function($window, $location, $timeout, QuestionList) {
+  .controller('IntroController', ['$location', '$timeout', function($location, $timeout) {
     this.width = window.innerWidth;
     this.height = window.innerHeight;
 

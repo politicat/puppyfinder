@@ -44,28 +44,20 @@ angular
       .otherwise('/intro');
   }]);
 
-// app controller
-// TODO $window 대신 다른 것 사용하기
-angular
-  .module('puppyfinder')
-  .controller('AppController', ['$window', function($window) {
-    /* A container for results in window scope to use in multiple apps(servey.js, result.js) */
-    $window.results = [];
-  }])
-
 // app Survey questions factory
 angular
   .module('puppyfinder')
   .factory('QuestionList', ['$http', function($http) {
+    let questions = [];
     let getQuestions = function() {
       return $http({
         method: 'GET',
         url: '/questions'
-      })
-      .then((resp) => resp);
+      });
     };
 
     return {
+      questions: questions,
       getQuestions: getQuestions
     };
   }]);
@@ -74,16 +66,17 @@ angular
 angular
   .module('puppyfinder')
   .factory('Result', ['$http', function($http) {
+    let results = [];
     let getResults = function(data) {
       return $http({
           method: 'GET',
           url: '/search',
           params: data
-        })
-        .then((resp) => resp);
+        });
     };
 
     return {
+      results: results,
       getResults: getResults
     };
   }]);
@@ -103,8 +96,7 @@ angular
             '&maxResults=' + 12 +
             '&type=' + 'video' +
             '&videoEmbeddable=' + 'true'
-        })
-        .then((resp) => resp.data.items);
+        });
     };
 
     /* Get video list json related to the breed in result from Youtube */
@@ -117,8 +109,7 @@ angular
           method: 'GET',
           url: '/daum',
           params: data
-        })
-        .then((resp) => resp);
+        });
     };
 
     /*
