@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/NoahLuftYang/puppyfinder.svg?branch=feat%2Ftravis)](https://travis-ci.org/NoahLuftYang/puppyfinder) [![Stories in Ready](https://badge.waffle.io/politicat/puppyfinder.png?label=ready&title=Ready)](https://waffle.io/politicat/puppyfinder)
 
-# PuppyFinder
+# PuppyFinder : Lagecy Project
 
 ## Synopsis
 
@@ -72,18 +72,18 @@ gulp
 
 ### 개선점
 
-1. 사용자가 입력한 답과 DB의 각 견종이 가진 답을 비교하여 둘이 일치할 때 점수(weight)를 주고, 이 점수를 합산하는 방식으로 변경하여 더 정확히 추천한다.
-2. 사용자 질문 submit 후 서버에서 응답하는 데 걸리는 시간이 늘어날 걸로 보이므로 survey와 result 사이에 로딩화면이 필요할 것으로 보인다(별도의 html일 필요는 없음, survey 페이지에서 서브밋 버튼 누르면 ng-show로 로딩 애니메이션이 보이게 처리하면 될 듯).
-3. 실수로 같은 breed data를 입력해도 중복처리가 안되어 있다.
+1. 사용자가 입력한 답과 DB의 각 견종이 가진 답을 비교하여 둘이 일치할 때 점수(weight)를 주고, 이 점수를 합산하는 방식으로 변경하여 더 정확히 추천한다. <-- 개선 완료
+2. 사용자 질문 submit 후 서버에서 응답하는 데 걸리는 시간이 늘어날 걸로 보이므로 survey와 result 사이에 로딩화면이 필요할 것으로 보인다(별도의 html일 필요는 없음, survey 페이지에서 서브밋 버튼 누르면 ng-show로 로딩 애니메이션이 보이게 처리하면 될 듯). <-- 개선 완료
+3. 실수로 같은 breed data를 입력해도 중복처리가 안되어 있다. <-- 개선 완료
 4. Intro Background Video 가 Static File 로 처리됨 (10메가)
 
 ### Advanced
 
 1. [다음 백과사전], 네이버 백과사전 등을 참고해 Result 페이지에서 더 많은 정보를 보여줄 수 있도록 DB의 견종별 정보를 더 세분화하여 입력한다. 특히 견종의 영문명을 추가하면 이미지 검색 API, Youtube API 등에 요청할 때 영문으로 해서 더 풍부한 검색 결과를 받아올 수 있을 것이다.
 2. Admin 페이지에서 가져오고자 하는 대표 이미지 URL을 입력하면 서버에 fs로 저장해 준다.
-3. Admin 페이지의 갱신, 삭제 기능을 한 페이지로 통합하고 UI를 개선한다.
+3. Admin 페이지의 갱신, 삭제 기능을 한 페이지로 통합하고 UI를 개선한다. <-- 개선 완료
 4. Admin 페이지에 접속 시 Login하도록 한다.
-5. 통계결과를 보여줄 수 있는 Stat 페이지를 완성한다
+5. 통계결과를 보여줄 수 있는 Stat 페이지를 완성한다. <-- 프로토타입 완성
 
 ## Frontend
 
@@ -95,7 +95,6 @@ gulp
 4. 다른 대안은 Angular-Material을 살펴보고 필요없는 모듈을 걷어내는 것이다. 코드 리딩에 자신있다면 이 방법이 더 좋을 것 같다.
 5. 4번 방법을 사용할 경우, survey page에 스크롤 애니메이션을 적용하기 위해서는 md-virtual-repeat를 기본 앵귤러 내장인 ng-repeat으로 변경하고 질문 간 이동 함수를 구현해야 한다. 유려한 UI를 위해 스크롤 애니메이션 적용을 권장한다.
 6. Survey 페이지에 바로 이전 질문으로 이동, 가장 위로 이동, 가장 아래로 이동하는 fixed 버튼을 추가한다. (Floating Action Button style)
-7. 완성되지 않은 Styling(특히 Result Page)을 꼼꼼하게 살피고 마감한다.
 
 ### Advanced
 
@@ -109,7 +108,7 @@ gulp
 
 ## Tests
 
-TBD
+Travis CI
 
 ## Contributors
 
